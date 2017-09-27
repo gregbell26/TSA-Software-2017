@@ -1,5 +1,5 @@
 package PreGui;
-
+//todo
 /**
  * Bugs:
  * None for now...
@@ -8,8 +8,12 @@ package PreGui;
  * Who Knows....
  *
  *
- * Thing ToDo:
+ * ToDo:
  * Everything
+ * use error code system
+ *
+ * Notes:
+ * Keep this file VERY clean it should only call the methods and print the
  *
  */
 
