@@ -1,5 +1,5 @@
 package PreGui;
-//todo
+
 //this class will encrypt anything in the usrInput array.
 //It should also have multiple encryption methods.
 // It has not been decided who will program this.

@@ -13,7 +13,7 @@ package PreGui;
  * use error code system
  *
  * Notes:
- * Keep this file VERY clean it should only call the methods and print the
+ * Keep this file VERY clean it should only call the methods and print the output
  *
  */
 
