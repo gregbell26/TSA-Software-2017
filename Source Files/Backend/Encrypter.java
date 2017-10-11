@@ -1,4 +1,5 @@
 package Backend;
+//any user errors in this class will be in the range of 100 - 199
 
 //this class will encrypt anything in the usrInput array.
 //It should also have multiple encryption methods.
