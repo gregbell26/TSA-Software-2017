@@ -10,7 +10,7 @@ public class CaesarCypher extends Encryption {
             ErrorChecker.ErrorChecker(100);
 
         } else {
-            System.out.println("Hi there key");
+            //System.out.println("Hi there key");
             key = userIn;
         }
         //System.out.println("Hi there text ");

@@ -22,6 +22,7 @@ class print {
     static void ln(Object ln){
         System.out.println(ln);
     }
+    static void nln(Object nln) { System.out.print(nln);}
 }
 public class MainFunction{
     public static void main(String[] args){
@@ -31,7 +32,7 @@ public class MainFunction{
         String sIn; int kIn;
         print.ln("Enter the text you would like to encrypt");
         sIn = sc.nextLine();
-        print.ln("Enter the key that you would like to encrypt");
+        print.ln("Enter the encryption key");
         kIn = sc.nextInt();
 
         CaesarCypher caesarCypher = new CaesarCypher(kIn, sIn);
