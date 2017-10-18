@@ -1,5 +1,7 @@
 package Backend;
+
 import java.util.Scanner;
+
 /**
  * Bugs:
  * None for now...
@@ -23,16 +25,22 @@ class print {
 }
 public class MainFunction{
     public static void main(String[] args){
-        int userInInt = 0;
-        Scanner in = new Scanner(System.in);
-        String userInString = "";
+        Encryption encryption = new Encryption();
 
-        print.ln("Enter the shift number you want to use");
-        userInInt = in.nextInt();
-        CaesarCypher.caesarShiftFinder(userInInt);
-        print.ln("Now enter the text you want to encrypt.");
-        userInString = in.nextLine();
-        print.ln(CaesarCypher.encryptCaesar(userInString));
+        Scanner sc = new Scanner(System.in);
+        String sIn; int kIn;
+        print.ln("Enter the text you would like to encrypt");
+        sIn = sc.nextLine();
+        print.ln("Enter the key that you would like to encrypt");
+        kIn = sc.nextInt();
+
+        CaesarCypher caesarCypher = new CaesarCypher(kIn, sIn);
+        encryption.encrypt();
+        encryption.viewEncrypted();
+
+
+
+
 
 
     }
