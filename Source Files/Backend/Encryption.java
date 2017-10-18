@@ -11,7 +11,7 @@ public class Encryption  {
     public static int key = 0;
     public static String text = "";
     String encryptedText;
-   static String encryptMethod;
+    static String encryptMethod;
     public Encryption(){//default constructor
         encryptedText = "";
         encryptMethod = "";
