@@ -13,7 +13,7 @@ public class CaesarCypher extends Encryption {
             System.out.println("Hi there key");
             key = userIn;
         }
-        System.out.println("Hi there text ");
+        //System.out.println("Hi there text ");
         text = userIn1;
         this.encryptMethod = "caesar";
     }

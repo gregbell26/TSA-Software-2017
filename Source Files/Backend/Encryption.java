@@ -40,7 +40,7 @@ public class Encryption  {
     }
 
    public String encrypt(){
-        System.out.println("Hi there encryper ");
+        //System.out.println("Hi there encryper ");
         if(encryptMethod.equals("caesar")){
             System.out.println("Hi there");
             encryptedText = encryptCaesar();
