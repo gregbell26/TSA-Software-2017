@@ -37,7 +37,13 @@ public class MainFunction{
 
         CaesarCypher caesarCypher = new CaesarCypher(kIn, sIn);
         encryption.encrypt();
+        print.nln("This is encrypted: ");
         encryption.viewEncrypted();
+        Decryption decryption = new Decryption();
+
+        print.ln("Here is it decrypted");
+        decryption.decrypt();
+        decryption.viewDecrypted();
 
 
 

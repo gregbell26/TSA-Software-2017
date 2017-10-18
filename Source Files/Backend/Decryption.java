@@ -3,17 +3,18 @@ package Backend;
 
 public class Decryption  {
 
-    public static int key = 0;
+    int key = Encryption.key;
     public static String text = "";
     String decryptedText;
     static String decryptMethod;
     public Decryption(){//default constructor
-        decryptedText = "";
-        decryptMethod = "";
+        decryptedText = Encryption.encryptedText;
+        decryptMethod = Encryption.encryptMethod;
     }
 
     //encryption methods
     private String decryptCaesar() {
+        key = key * -1;
         String text = decryptedText;
         int n = text.length();
         String output = "";
@@ -24,7 +25,7 @@ public class Decryption  {
             }
             if ((a >= 97) && (a <= 122)) {
                 a -= 96;
-                a -= key;
+                a += key;
                 char c = (char) ((a % 26) + 96);
                 output += c;
             } else {
@@ -34,10 +35,10 @@ public class Decryption  {
         return output;
     }
 
-    public String encrypt(){
+    public String decrypt(){
         //System.out.println("Hi there encryper ");
         if(decryptMethod.equals("caesar")){
-            System.out.println("Hi there");
+            //System.out.println("Hi there");
             decryptedText = decryptCaesar();
         }
         return decryptedText;
