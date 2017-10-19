@@ -26,7 +26,6 @@ public class Decryption  {
                 if (a < 'a') {
                     a = a + 26;
                 }
-                //output += c;
             }
             output += (char) a;
         }
