@@ -3,6 +3,8 @@ package Backend;
 import java.util.Scanner;
 import java.io.*;
 
+import static java.sql.Types.NULL;
+
 /**
  * Bugs:
  *
@@ -45,6 +47,7 @@ public class MainFunction{
     public static void main(String[] args){
         //pre run stuff all of this stuff needs to be defined before we run 
         Encryption encryption = new Encryption();
+        Decryption decryption = new Decryption();
         Scanner sc = new Scanner(System.in);
         String textIn, userIn; int keyIn;
         //end of local variable definition 
@@ -77,21 +80,45 @@ public class MainFunction{
 
                 }
                 if (global.encrypt == true){encryption.encrypt();}
-                print.nln("Done.");
+                print.ln("Done.");
                 global.encrypt = false;
             }
+            else if (userIn.equals("decrypt") || userIn.equals("de")){
+                userIn = "";
+                keyIn = 0;
+                print.nln("Verify your password: ");
+                keyIn = sc.nextInt();
+                keyIn = sc.nextInt();
+                if (decryption.passMatch(keyIn) == true){
+                    decryption.setDecryptAll(keyIn);
+                    global.decrypt = true;
+                }
+                else {
+                    print.ln("Your password did not match");
+                    global.decrypt = false;
+                }
+                if (global.decrypt == true){
+                    decryption.decrypt();
+                }
+
+            }
+
             else if(userIn.equals("view")) {
                 print.nln("This is encrypted: ");
                 encryption.viewEncrypted();
+                print.nln("Here is it decrypted: ");
+                decryption.viewDecrypted();
             }
             else if (userIn.equals("q")){
                 global.active = false;
                 System.exit(0);
             }
-            Decryption decryption = new Decryption();
-            print.nln("Here is it decrypted: ");
-            decryption.decrypt();
-            decryption.viewDecrypted();
+
+
+           else {
+                print.ln("Command not found.");
+            }
+
 
 
         }

@@ -3,11 +3,16 @@ package Backend;
 
 public class Decryption  {
 
-    int key = Encryption.key;
+    private int key;
     public static String text = "";
     static String decryptedText;
     static String decryptMethod;
     public Decryption(){//default constructor
+
+    }
+
+    public void setDecryptAll(int keyCheck){
+        key = keyCheck;
         decryptedText = Encryption.encryptedText;
         decryptMethod = Encryption.encryptMethod;
     }
@@ -41,6 +46,15 @@ public class Decryption  {
 
     public void  viewDecrypted() {
         System.out.println(decryptedText);
+    }
+
+    public boolean passMatch(int key){
+        if (key == Encryption.key){
+            return  true;
+        }
+        else {
+            return false;
+        }
     }
 
 }
