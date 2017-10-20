@@ -59,7 +59,7 @@ public class MainFunction{
         Pause();//waits for the user to
         global.active = true;
         while(global.active == true) {
-            userIn = "";
+            //userIn = "";
             print.nln(">");
             userIn = sc.nextLine();
             if (userIn.equals("encrypt") || userIn.equals("en")) {
@@ -68,8 +68,8 @@ public class MainFunction{
                 textIn = sc.nextLine();
                 print.nln("Enter the encryption key: ");
                 keyIn = sc.nextInt();
-                print.ln("Enter the method you would like to use");
-                print.nln(">");
+                print.nln("Enter the method you would like to use: ");
+                //print.nln(">");
                 userIn = sc.nextLine();
                 userIn = sc.nextLine();
                 if (userIn.equals("caesar")||userIn.equals("c")){
@@ -84,10 +84,10 @@ public class MainFunction{
                 global.encrypt = false;
             }
             else if (userIn.equals("decrypt") || userIn.equals("de")){
-                userIn = "";
-                keyIn = 0;
+                //userIn = "";
+                //keyIn = 0;
                 print.nln("Verify your password: ");
-                keyIn = sc.nextInt();
+                //keyIn = sc.nextInt();
                 keyIn = sc.nextInt();
                 if (decryption.passMatch(keyIn) == true){
                     decryption.setDecryptAll(keyIn);
@@ -99,7 +99,9 @@ public class MainFunction{
                 }
                 if (global.decrypt == true){
                     decryption.decrypt();
+
                 }
+                print.ln("Done.");
 
             }
 
