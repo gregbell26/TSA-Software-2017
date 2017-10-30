@@ -1,12 +1,18 @@
 package Backend;
 //any user errors in this class will be in the range of 100 - 199
 
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+import java.security.MessageDigest;
+import java.util.Arrays;
+import org.apache.commons.codec.binary.*;
 public class Decryption  {
 
     private int key;
-    public static String text = "";
-    static String decryptedText;
-    static String decryptMethod;
+    private String text = "";
+    private static String decryptedText;
+    private static String decryptMethod;
     public Decryption(){//default constructor
 
     }
@@ -36,10 +42,31 @@ public class Decryption  {
         }
         return output;
     }
+
+    private String decrypt3DES() throws Exception {
+        String encryptedText = decryptedText;
+        String keyin = Integer.valueOf(this.key).toString();
+        byte[] message = Base64.decodeBase64(encryptedText.getBytes("utf-8"));
+
+        MessageDigest md = MessageDigest.getInstance("SHA-1");
+        byte[] digestOfPassword = md.digest(keyin.getBytes("utf-8"));
+        byte[] keyBytes = Arrays.copyOf(digestOfPassword, 24);
+        SecretKey key = new SecretKeySpec(keyBytes, "DESede");
+
+        Cipher decipher = Cipher.getInstance("DESede");
+        decipher.init(Cipher.DECRYPT_MODE, key);
+
+        byte[] plainText = decipher.doFinal(message);
+
+        return new String(plainText, "UTF-8");
+    }
 //master decryption
-    public String decrypt(){
-        if(decryptMethod.equals("caesar")){
+    public String decrypt() throws  Exception{
+        if(decryptMethod.equals("caesar")){//checks to see if the
             decryptedText = decryptCaesar();
+        }
+        else if(decryptMethod.equals("3DES")){
+            decryptedText = decrypt3DES();
         }
         return decryptedText;
     }
@@ -48,7 +75,7 @@ public class Decryption  {
         System.out.println(decryptedText);
     }
 
-    public boolean passMatch(int key){
+    public boolean passMatch(int key){//this will have to be revised for
         if (key == Encryption.key){
             return  true;
         }

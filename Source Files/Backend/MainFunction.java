@@ -7,7 +7,7 @@ import static java.sql.Types.NULL;
 
 /**
  * Bugs:
- *
+ * RSA. Although
  *
  * Solutions:
  *
@@ -16,6 +16,7 @@ import static java.sql.Types.NULL;
  * ToDo:
  * RSA
  * use error code system
+ *
  *
  * Notes:
  * Keep this file VERY clean it should only call the methods and print the output
@@ -44,9 +45,9 @@ public class MainFunction{
         }
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args)throws Exception{
         //pre run stuff all of this stuff needs to be defined before we run 
-        Encryption encryption = new Encryption();
+        Encryption encryption = new Encryption();//creating a encrypter
         Decryption decryption = new Decryption();
         Scanner sc = new Scanner(System.in);
         String textIn, userIn; int keyIn;
@@ -56,9 +57,9 @@ public class MainFunction{
         print.ln("This project was programed by");
         print.credits();
         print.nln("Press enter to load program");
-        Pause();//waits for the user to
+        Pause();//waits for the user to press enter then it  runs..
         global.active = true;
-        while(global.active == true) {
+        while(global.active) {
             //userIn = "";
             print.nln(">");
             userIn = sc.nextLine();
@@ -70,26 +71,32 @@ public class MainFunction{
                 keyIn = sc.nextInt();
                 print.nln("Enter the method you would like to use: ");
                 //print.nln(">");
+                userIn = "";
                 userIn = sc.nextLine();
                 userIn = sc.nextLine();
                 if (userIn.equals("caesar")||userIn.equals("c")){
                     CaesarCypher caesarCypher = new CaesarCypher(keyIn, textIn);
                     global.encrypt = true;
                 }
+                else if (userIn.equals("3DES") || userIn.equals("3D")){
+                    //print.ln("3DES");
+                    TripleDES tripleDES = new TripleDES(keyIn, textIn);
+                    global.encrypt = true;
+                }
                 else {
 
                 }
-                if (global.encrypt == true){encryption.encrypt();}
+                if (global.encrypt){encryption.encrypt(); }
                 print.ln("Done.");
                 global.encrypt = false;
             }
             else if (userIn.equals("decrypt") || userIn.equals("de")){
-                //userIn = "";
+                userIn = "";
                 //keyIn = 0;
                 print.nln("Verify your password: ");
                 //keyIn = sc.nextInt();
                 keyIn = sc.nextInt();
-                if (decryption.passMatch(keyIn) == true){
+                if (decryption.passMatch(keyIn)){
                     decryption.setDecryptAll(keyIn);
                     global.decrypt = true;
                 }

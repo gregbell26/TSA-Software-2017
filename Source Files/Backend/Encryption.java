@@ -1,6 +1,13 @@
 package Backend;
 //any user errors in this class will be in the range of 100 - 199
 
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+import java.security.MessageDigest;
+import java.util.Arrays;
+import org.apache.commons.codec.binary.*;
+
 //this class will encrypt anything in the usrInput array.
 //It should also have multiple encryption methods.
 // It has not been decided who will program this.
@@ -38,12 +45,31 @@ public class Encryption  {
         }
         return output;
     }
+    private String encrypt3DES() throws Exception {
+        String keyin = Integer.valueOf(this.key).toString();
+        String text = this.text;
+        MessageDigest md = MessageDigest.getInstance("SHA-1");
+        byte[] digestOfPassword = md.digest(keyin.getBytes("utf-8"));
+        byte[] keyBytes = Arrays.copyOf(digestOfPassword, 24);
 
-   public String encrypt(){
-        //System.out.println("Hi there encryper ");
+        SecretKey key = new SecretKeySpec(keyBytes, "DESede");
+        Cipher cipher = Cipher.getInstance("DESede");
+        cipher.init(Cipher.ENCRYPT_MODE, key);
+
+        byte[] plainTextBytes = text.getBytes("utf-8");
+        byte[] buf = cipher.doFinal(plainTextBytes);
+        byte [] base64Bytes = Base64.encodeBase64(buf);
+        String base64EncryptedString = new String(base64Bytes);
+
+        return base64EncryptedString;
+    }
+//this is what will determine the cypher we use
+   public String encrypt()throws Exception{
         if(encryptMethod.equals("caesar")){
-            //System.out.println("Hi there");
             encryptedText = encryptCaesar();
+        }
+        else if (encryptMethod.equals("3DES")){
+            encryptedText = encrypt3DES();
         }
         return encryptedText;
    }

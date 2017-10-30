@@ -1,6 +1,7 @@
 package Backend;
 
 /**
+ * this might get canceled
  * All encrypter errors will be 100 to 199
  * This will be used to check for errors in what the user entered
  * Possible errors might be password is too short, failed encrytion failure. Input exceeds maxuim allowed.
