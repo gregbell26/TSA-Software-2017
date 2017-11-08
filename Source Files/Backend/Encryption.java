@@ -15,7 +15,7 @@ import org.apache.commons.codec.binary.*;
 //This will need a variable called encryer out.
 public class Encryption  {
 
-    public static int key = 0;
+    public static float key = 0;
     public static String text = "";
     public static String encryptedText;
     static String encryptMethod;
@@ -46,7 +46,7 @@ public class Encryption  {
         return output;
     }
     private String encrypt3DES() throws Exception {
-        String keyin = Integer.valueOf(this.key).toString();
+        String keyin = Float.valueOf(this.key).toString();
         String text = this.text;
         MessageDigest md = MessageDigest.getInstance("SHA-1");
         byte[] digestOfPassword = md.digest(keyin.getBytes("utf-8"));

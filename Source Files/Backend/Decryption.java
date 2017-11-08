@@ -9,7 +9,7 @@ import java.util.Arrays;
 import org.apache.commons.codec.binary.*;
 public class Decryption  {
 
-    private int key;
+    private float key;
     private String text = "";
     private static String decryptedText;
     private static String decryptMethod;
@@ -17,7 +17,7 @@ public class Decryption  {
 
     }
 
-    public void setDecryptAll(int keyCheck){
+    public void setDecryptAll(float keyCheck){
         key = keyCheck;
         decryptedText = Encryption.encryptedText;
         decryptMethod = Encryption.encryptMethod;
@@ -32,7 +32,7 @@ public class Decryption  {
             int a = (int) text.charAt(i);
 
             if ((a >= 97) && (a <= 122)) {
-                a = a - (key % 26);
+                a = a - ((int)key % 26);
                 char c = (char) ((a % 26) + 96);
                 if (a < 'a') {
                     a = a + 26;
@@ -45,7 +45,7 @@ public class Decryption  {
 
     private String decrypt3DES() throws Exception {
         String encryptedText = decryptedText;
-        String keyin = Integer.valueOf(this.key).toString();
+        String keyin = Float.valueOf(this.key).toString();
         byte[] message = Base64.decodeBase64(encryptedText.getBytes("utf-8"));
 
         MessageDigest md = MessageDigest.getInstance("SHA-1");
@@ -75,7 +75,7 @@ public class Decryption  {
         System.out.println(decryptedText);
     }
 
-    public boolean passMatch(int key){//this will have to be revised for
+    public boolean passMatch(float key){//this will have to be revised for
         if (key == Encryption.key){
             return  true;
         }

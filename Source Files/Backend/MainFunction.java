@@ -2,12 +2,11 @@ package Backend;
 
 import java.util.Scanner;
 import java.io.*;
-
-import static java.sql.Types.NULL;
+import java.math.BigInteger;
 
 /**
  * Bugs:
- * RSA. Although its not here the stuff that we are using in a test area is not working
+ * RSA. Although its not here the stuff that we are using in a test area is not working. It is not decrpting nor encrypting correctly
  *
  * Solutions:
  * Well, I could just pray
@@ -15,7 +14,6 @@ import static java.sql.Types.NULL;
  *
  * ToDo:
  * RSA
- * use error code system
  * Comments!!!!!!!!!!
  *
  * Notes:
@@ -58,7 +56,7 @@ public class MainFunction{
 
         //Local Vars
         String textIn, userIn; //textIn is the text that we'll be passing to an encryptors. userIn is the generic user input variable.
-        int keyIn;//stores the password that the user enters. For encryption methods that need a string password type we are converting it in the function that needs it.
+        float keyIn;//stores the password that the user enters. For encryption methods that need a string password type we are converting it in the function that needs it.
         //end of local variable definition
 
         //Intro this is displayed first. When we move to a GUI this will be stored in a about box.
@@ -72,20 +70,26 @@ public class MainFunction{
         global.active = true;
 
         while(global.active) { //this is a loop that keeps the program running until we exit
-            userIn = "";//every time you see this it is us clearing the variable
+            //userIn = "";//every time you see this it is us clearing the variable
             print.nln(">");//tells the user (s)he can enter something
             userIn = sc.nextLine();//user imput getter and strorer.
 
             //com handler I donn't know how to put this into its own function.
             //encrypt block
             if (userIn.equals("encrypt") || userIn.equals("en")) {//first equals is the full version and the next one is the abbration
-                userIn = "";
+                //userIn = "";
 
                 print.nln("Enter the text you would like to encrypt: ");
                 textIn = sc.nextLine();//this is the only time we apply a variable to textIn
 
                 print.nln("Enter the encryption key: ");
-                keyIn = sc.nextInt();//sets the key then passes it to the encryption method.
+                try {
+                    keyIn = sc.nextFloat();//sets the key then passes it to the encryption method.
+                }catch (Exception InputMismatchException){
+                    keyIn = 0;
+                    print.ln("Please make sure that your password it an interger and under 32 digits");
+                    keyIn = sc.nextFloat();
+                }
 
                 print.nln("Enter the method you would like to use: ");
                 userIn = sc.nextLine();//for some reason we have to put this twice to accept input
@@ -116,7 +120,7 @@ public class MainFunction{
             //decryption drive
             else if (userIn.equals("decrypt") || userIn.equals("de")){
                 print.nln("Verify your password: ");//has the user enter the password again
-                keyIn = sc.nextInt();//gets the key for the final time
+                keyIn = sc.nextFloat();//gets the key for the final time
 
                 if (decryption.passMatch(keyIn)){//if the key matches...
                     decryption.setDecryptAll(keyIn);//..set all the variables in the decrption class and pass the key..
