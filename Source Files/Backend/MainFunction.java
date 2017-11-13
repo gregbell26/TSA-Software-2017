@@ -89,7 +89,7 @@ public class MainFunction{
                     keyIn = 0;
                     print.ln("Please make sure that your password it an interger and under 32 digits");
                     keyIn = sc.nextFloat();
-                }
+                }//sd
 
                 print.nln("Enter the method you would like to use: ");
                 userIn = sc.nextLine();//for some reason we have to put this twice to accept input
