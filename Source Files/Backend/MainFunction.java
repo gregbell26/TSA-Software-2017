@@ -2,7 +2,6 @@ package Backend;
 
 import java.util.Scanner;
 import java.io.*;
-import java.math.BigInteger;
 
 /**
  * Bugs:
@@ -26,8 +25,8 @@ class print {
     static void credits(){/*TODO THE CREDITS*/}//credit where credit is due
 }
 
-class global {
-    //AHH global variables
+class GlobalVars {
+    //AHH GlobalVars variables
     static boolean encrypt =false;//tells us we can encrypt
     static boolean decrypt = false;//tells us we can decrypt
     static boolean active = false;//if we can exit or not
@@ -49,14 +48,15 @@ public class MainFunction{
         //pre run stuff all of this stuff needs to be defined before we run
 
         //constructors
-        Encryption encryption = new Encryption();//creating a encryptor object
-        Decryption decryption = new Decryption();//same as above just with a decrptor
+        //these are the encrytion and decrytion methods
+        TripleDES tripleDES = new TripleDES();
+        CaesarCypher caesarCypher = new CaesarCypher();
         Scanner sc = new Scanner(System.in); //a user in thing. Uses the name sc which stands for scanner
         //eof constructor definition
 
         //Local Vars
         String textIn, userIn; //textIn is the text that we'll be passing to an encryptors. userIn is the generic user input variable.
-        float keyIn;//stores the password that the user enters. For encryption methods that need a string password type we are converting it in the function that needs it.
+        String keyIn;//stores the password that the user enters. For encryption methods that need a string password type we are converting it in the function that needs it.
         //end of local variable definition
 
         //Intro this is displayed first. When we move to a GUI this will be stored in a about box.
@@ -67,9 +67,9 @@ public class MainFunction{
         //eof intro
 
         Pause();//waits for the user to press enter then it  runs..
-        global.active = true;
+        GlobalVars.active = true;
 
-        while(global.active) { //this is a loop that keeps the program running until we exit
+        while(GlobalVars.active) { //this is a loop that keeps the program running until we exit
             //userIn = "";//every time you see this it is us clearing the variable
             print.nln(">");//tells the user (s)he can enter something
             userIn = sc.nextLine();//user imput getter and strorer.
@@ -78,82 +78,95 @@ public class MainFunction{
             //encrypt block
             if (userIn.equals("encrypt") || userIn.equals("en")) {//first equals is the full version and the next one is the abbration
                 //userIn = "";
+                //clearing all private variables.
+                tripleDES.clearAll();//clears 3DES
+                caesarCypher.clearAll();//clears caesar
 
                 print.nln("Enter the text you would like to encrypt: ");
                 textIn = sc.nextLine();//this is the only time we apply a variable to textIn
 
                 print.nln("Enter the encryption key: ");
-                try {
-                    keyIn = sc.nextFloat();//sets the key then passes it to the encryption method.
-                }catch (Exception InputMismatchException){
-                    keyIn = 0;
-                    print.ln("Please make sure that your password it an interger and under 32 digits");
-                    keyIn = sc.nextFloat();
-                }//sd
+                keyIn = sc.nextLine();//takes the key in string form. Most of our methods use this so it more useful to convert it to a int when needed
 
                 print.nln("Enter the method you would like to use: ");
-                userIn = sc.nextLine();//for some reason we have to put this twice to accept input
                 userIn = sc.nextLine();//gets the encryption method that the user wants to use
                 if (userIn.equals("caesar")||userIn.equals("c")){//checks if we are using the caesar cypher
-                    CaesarCypher caesarCypher = new CaesarCypher(keyIn, textIn);//sets the variables and passes them to the master encryption class
-                    global.encrypt = true;//says yes we can encrypt
+                    caesarCypher.setAll(keyIn, textIn);//sets the variables and passes them to the master encryption class
+                    GlobalVars.encrypt = true;//says yes we can encrypt
                 }
                 else if (userIn.equals("3DES") || userIn.equals("3D")){//checks if we are using the 3DES method
-                    TripleDES tripleDES = new TripleDES(keyIn, textIn);//sets the variables and passes them to the master encryption class
-                    global.encrypt = true;//says yes we can encrypt
+                    tripleDES.setAll(keyIn, textIn);
+                    //print.ln("SetAll");
+                    //TripleDES tripleDES = new TripleDES(keyIn, textIn);//sets the variables and passes them to the master encryption class
+                    GlobalVars.encrypt = true;//says yes we can encrypt
                 }
                 else {//error message
                     print.ln("That is an invalid method, or it has not been fully implemented into this program.");
                 }
 
-                if (global.encrypt){//when encrpyt is set to true encryt any text in the textIn variable
-                    encryption.encrypt();
+                if (GlobalVars.encrypt){//when encrpyt is set to true encryt any text in the textIn variable
+                    //this is a very stupid desioion but this is the best way to do this I think
+                    if (tripleDES.getEncryptedText() != null) {
+                        //print.ln("3D encrypt");
+                        tripleDES.encrypt();
+                    }
+                    else if (caesarCypher.getEncryptedText() != null) {
+                        //print.ln("Caeser encrypt");
+                        caesarCypher.encrypt();
+                    }
+
+
                     print.ln("Done.");
+
                 }
                 else {//error message
                     print.ln("Encryption Failed.");
                 }
 
-                global.encrypt = false;
+                GlobalVars.encrypt = false;
             }
 
             //decryption drive
             else if (userIn.equals("decrypt") || userIn.equals("de")){
                 print.nln("Verify your password: ");//has the user enter the password again
-                keyIn = sc.nextFloat();//gets the key for the final time
+                keyIn = sc.nextLine();//gets the key for the final time
 
-                if (decryption.passMatch(keyIn)){//if the key matches...
-                    decryption.setDecryptAll(keyIn);//..set all the variables in the decrption class and pass the key..
-                    global.decrypt = true;//..then yes we are allowed to decrypt.
+                if (tripleDES.passMatch(keyIn) || caesarCypher.passMatch(keyIn)){//if the key matches...
+                    GlobalVars.decrypt = true;//..then yes we are allowed to decrypt.
                 }
                 else {///error message
                     print.ln("Your password did not match");
-                    global.decrypt = false;//its already false but you know lets just make sure
+                    GlobalVars.decrypt = false;//its already false but you know lets just make sure
                 }
 
-                if (global.decrypt == true){//checks if we are able to decrypt
-                    decryption.decrypt();
+                if (GlobalVars.decrypt == true){//checks if we are able to decrypt
+                    if (tripleDES.getEncryptedText() != null) {
+                        tripleDES.decrypt();
+                    }
+                    else if (caesarCypher.getEncryptedText() != null) {
+                        caesarCypher.decrypt();
+                    }
                     print.ln("Done.");
                 }
                 else {//error message
                     print.ln("Decryption Failed.");
                 }
 
-                global.decrypt = false;
+                GlobalVars.decrypt = false;
             }
 
             //view coldasack
             else if(userIn.equals("view")) {//does it exacly like it says. Prints the encrypted and decrypted strings
                 print.nln("This is encrypted: ");
-                encryption.viewEncrypted();//prints what was encrypted.
+                GlobalFuncts.viewEncrypted();//prints what was encrypted.
 
                 print.nln("Here is it decrypted: ");
-                decryption.viewDecrypted();//prints what was decrypted.
+                GlobalFuncts.viewDecrypted();//prints what was decrypted.
             }
 
             //Just Quit
             else if (userIn.equals("q")){
-                global.active = false;//this breaks the loop.. In Style!!
+                GlobalVars.active = false;//this breaks the loop.. In Style!!
                 System.exit(0);//Exits
             }
 
@@ -166,6 +179,7 @@ public class MainFunction{
                 print.ln("help -------------------------------------- Prints this help");
 
             }
+
 
             else {//the sadness and the error
                 print.ln("Command not found.");
