@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="Window" prefHeight="400.0" prefWidth="600.0" styleClass="Window" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainWindow">
+   <children>
+      <Button id="Button" cacheShape="false" centerShape="false" layoutX="146.0" layoutY="335.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="308.0" scaleShape="false" styleClass="Button" stylesheets="@style.css" text="Encrypt">
+         <font>
+            <Font name="Roboto Medium" size="25.0" />
+         </font>
+      </Button>
+      <PasswordField id="PasswordInputFeild" fx:id="PasswordField" layoutX="146.0" layoutY="219.0" prefHeight="25.0" prefWidth="308.0" promptText="Enter Encryption Password " styleClass="PasswordInputFeild" stylesheets="@style.css">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </PasswordField>
+      <TextField id="TextInputFeild" fx:id="InputText" layoutX="146.0" layoutY="85.0" prefHeight="25.0" prefWidth="308.0" promptText="Enter Text to Encrypt" styleClass="TextInputFeild" stylesheets="@style.css">
+         <font>
+            <Font name="Roboto" size="12.0" />
+         </font>
+      </TextField>
+      <Text layoutX="8.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright 2017">
+         <font>
+            <Font name="Roboto Light" size="10.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="LogoImage" fitHeight="118.0" fitWidth="104.0" layoutX="8.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo.png" />
+         </image>
+      </ImageView>
+      <Text id="Title" layoutX="77.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Title" text="2017 TSA  Encrytption Utililty" wrappingWidth="445.13671875">
+         <font>
+            <Font name="Roboto Slab Bold" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

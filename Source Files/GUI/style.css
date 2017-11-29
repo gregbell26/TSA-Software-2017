@@ -1,0 +1,31 @@
+/*GUI Style by TriHard Studios*/
+.Window {
+    -fx-background-color: #ffffff;
+}
+
+.button {
+    -fx-border-radius: 2px;
+    -fx-background-color: #f4f4f4;
+}
+
+.button:hover{
+    -fx-background-color: #000000;
+    -fx-text-fill: white;
+}
+
+
+.Title{
+    -fx-font-family: "Roboto Slab Bold", "Times New Roman";
+    -fx-font-size: 25pt;
+
+}
+
+.PasswordInputFeild {
+    -fx-background-color: #f4f4f4;
+    -fx-border-radius: 2px;
+}
+
+.TextInputFeild {
+    -fx-background-color: #f4f4f4;
+    -fx-border-radius: 2px;
+}
