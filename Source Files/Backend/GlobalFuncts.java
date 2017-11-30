@@ -25,3 +25,16 @@ public class GlobalFuncts {
         }
     }
 }
+class print {
+    static void ln(Object ln){ System.out.println(ln); }//equivalent of System.out.println(); to use use print.ln();
+    static void nln(Object nln) { System.out.print(nln);}//equivalent of System.out.print(); to use use print.nln(""); (note the coloms)
+    static void credits(){/*TODO THE CREDITS*/}//credit where credit is due
+}
+
+class GlobalVars {
+    //AHH GlobalVars variables
+    static boolean encrypt =false;//tells us we can encrypt
+    static boolean decrypt = false;//tells us we can decrypt
+    static boolean active = false;//if we can exit or not
+
+}

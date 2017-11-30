@@ -12,26 +12,15 @@ import java.io.*;
  *
  *
  * ToDo:
- * RSA
+ * RSA!!!!!!!!
  * Comments!!!!!!!!!!
  *
  * Notes:
  * Keep this file VERY clean it should only call the methods and print the output
  * When Gregory programed this he listened to a lot of All American Rejects.
+ * This file was used to test the backend.. With the gui it is not nessary
  */
-class print {
-    static void ln(Object ln){ System.out.println(ln); }//equivalent of System.out.println(); to use use print.ln();
-    static void nln(Object nln) { System.out.print(nln);}//equivalent of System.out.print(); to use use print.nln(""); (note the coloms)
-    static void credits(){/*TODO THE CREDITS*/}//credit where credit is due
-}
 
-class GlobalVars {
-    //AHH GlobalVars variables
-    static boolean encrypt =false;//tells us we can encrypt
-    static boolean decrypt = false;//tells us we can decrypt
-    static boolean active = false;//if we can exit or not
-
-}
 public class MainFunction{
     static void Pause(){//this pauses until the user presses a key
         int pause;
