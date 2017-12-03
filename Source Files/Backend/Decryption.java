@@ -9,9 +9,8 @@ import java.util.Arrays;
 import org.apache.commons.codec.binary.*;
 public interface Decryption  {
 
-    public boolean passMatch(String keyIn);
 
-    public void decrypt() throws  Exception;
+    void decrypt() throws  Exception;
 
 
 

@@ -1,5 +1,12 @@
 package GUI;
-
+/**
+ * //TODO FILE DECRITPTION
+ * @music My Chemical Romance
+ * @author Gregory Bell
+ * @company TriHard Studios
+ * @version  0.8.9
+ *
+ */
 import Backend.GUIBackend;
 import javafx.application.Application;
 import javafx.fxml.FXML;
@@ -17,15 +24,19 @@ import javafx.event.ActionEvent;
 
 
 public class MainWindow extends Application {
-//Starting the backend
+
+    //----------------------BACKEND----------------------
     static GUIBackend guiBackend = new GUIBackend();
-//DONE
+    //---------------------------------------------------
+
+    //-------------------FXML-VARIABLES------------------
     @FXML
     private TextField TextInputFeild;
     @FXML
     private TextField PasswordInputFeild;
     @FXML
     private TextField StatusBox;
+    //-----------------FXML-VARIABLES--------------------
 
 
     public static void main(String[] args) {
@@ -36,7 +47,7 @@ public class MainWindow extends Application {
     public void start(Stage primaryStage){//this creates everything!! Special thanks to google!
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainWindow.fxml"));
-            AnchorPane root = (AnchorPane) fxmlLoader.load();
+            AnchorPane root = fxmlLoader.load();
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
 
@@ -51,6 +62,9 @@ public class MainWindow extends Application {
 
     }
 
+    //-------------------------------------------------
+    //---------------FXML-FUNCTIONS--------------------
+    //-------------------------------------------------
     @FXML
     private void HandleCaesarSelection(ActionEvent event) {
         StatusBox.clear();
@@ -62,7 +76,14 @@ public class MainWindow extends Application {
     private void Handle3DESSelection(ActionEvent event){
         StatusBox.clear();
         StatusBox.setText("3DES");
-        System.out.println("3DES Selected");
+        System.out.println("INFORMATION: 3DES Selected");
+    }
+
+    @FXML
+    private void HandleB64Selection(ActionEvent event){
+        StatusBox.clear();
+        StatusBox.setText("Base64");
+        System.out.println("INFORMATION: Base64 Selected");
     }
 
     @FXML
@@ -71,7 +92,8 @@ public class MainWindow extends Application {
         String getText = TextInputFeild.getText();
         String getPassword=PasswordInputFeild.getText();
         String getMethod = StatusBox.getText();
-        System.out.println("The user entered " + getText + " as their encrypt text and " + getPassword + " as their password.");
+        System.out.println("INFORMATION: User input: " + getText);
+        System.out.println("INFORMATION: Password: " + getPassword);
 
         guiBackend.setAll(getText, getPassword, getMethod);
         if(guiBackend.encrypt()){
@@ -98,6 +120,9 @@ public class MainWindow extends Application {
         }
     }
 
+    //-------------------------------------------------------------
+    //---------------EOF-FXML-FUNCTIONS----------------------------
+    //-------------------------------------------------------------
 
 
 

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="tsa-software-2017" default="all">
+  
+  
+  <property file="tsa-software-2017.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="700m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/*.rbc/**"/>
+    <exclude name="**/*.yarb/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.egg"/>
+    <include name="*.jar"/>
+    <include name="*.ear"/>
+    <include name="*.swc"/>
+    <include name="*.war"/>
+    <include name="*.ane"/>
+    <include name="*.zip"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.groovy"/>
+    <exclude name="**/?*.scala"/>
+    <exclude name="**/?*.flex"/>
+    <exclude name="**/?*.kt"/>
+    <exclude name="**/?*.clj"/>
+    <exclude name="**/?*.aj"/>
+  </patternset>
+  
+  <!-- JDK definitions -->
+  
+  <property name="jdk.bin.1.8" value="${jdk.home.1.8}/bin"/>
+  <path id="jdk.classpath.1.8">
+    <fileset dir="${jdk.home.1.8}">
+      <include name="jre/lib/charsets.jar"/>
+      <include name="jre/lib/deploy.jar"/>
+      <include name="jre/lib/ext/access-bridge-64.jar"/>
+      <include name="jre/lib/ext/cldrdata.jar"/>
+      <include name="jre/lib/ext/dnsns.jar"/>
+      <include name="jre/lib/ext/jaccess.jar"/>
+      <include name="jre/lib/ext/jfxrt.jar"/>
+      <include name="jre/lib/ext/localedata.jar"/>
+      <include name="jre/lib/ext/nashorn.jar"/>
+      <include name="jre/lib/ext/sunec.jar"/>
+      <include name="jre/lib/ext/sunjce_provider.jar"/>
+      <include name="jre/lib/ext/sunmscapi.jar"/>
+      <include name="jre/lib/ext/sunpkcs11.jar"/>
+      <include name="jre/lib/ext/zipfs.jar"/>
+      <include name="jre/lib/javaws.jar"/>
+      <include name="jre/lib/jce.jar"/>
+      <include name="jre/lib/jfr.jar"/>
+      <include name="jre/lib/jfxswt.jar"/>
+      <include name="jre/lib/jsse.jar"/>
+      <include name="jre/lib/management-agent.jar"/>
+      <include name="jre/lib/plugin.jar"/>
+      <include name="jre/lib/resources.jar"/>
+      <include name="jre/lib/rt.jar"/>
+    </fileset>
+  </path>
+  
+  <property name="project.jdk.home" value="${jdk.home.1.8}"/>
+  <property name="project.jdk.bin" value="${jdk.bin.1.8}"/>
+  <property name="project.jdk.classpath" value="jdk.classpath.1.8"/>
+  <!-- Register Custom Compiler Taskdefs -->
+  <property name="javac2.home" value="${idea.home}/lib"/>
+  <path id="javac2.classpath">
+    <pathelement location="${javac2.home}/javac2.jar"/>
+    <pathelement location="${javac2.home}/jdom.jar"/>
+    <pathelement location="${javac2.home}/asm-all.jar"/>
+    <pathelement location="${javac2.home}/jgoodies-forms.jar"/>
+  </path>
+  <target name="register.custom.compilers">
+    <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
+    <taskdef name="instrumentIdeaExtensions" classname="com.intellij.ant.InstrumentIdeaExtensions" classpathref="javac2.classpath"/>
+  </target>
+  
+  <!-- Modules -->
+  
+  <import file="${basedir}/module_tsa-software-2017.xml"/>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.tsa-software-2017, clean.artifact.gui" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.tsa-software-2017" description="build all modules"/>
+  
+  <target name="init.artifacts">
+    <property name="artifacts.temp.dir" value="${basedir}/__artifacts_temp"/>
+    <property name="artifact.output.gui" value="${basedir}/out/artifacts/GUI"/>
+    <property name="artifact.output.tsa-software-2017:jar" value="${basedir}/out/artifacts/TSA_Software_2017_jar"/>
+    <mkdir dir="${artifacts.temp.dir}"/>
+    <property name="artifact.temp.output." value="${artifacts.temp.dir}/"/>
+    <property name="temp.jar.path.TSA-Software-2017.jar" value="${artifacts.temp.dir}/TSA-Software-2017.jar"/>
+    <taskdef resource="com/sun/javafx/tools/ant/antlib.xml" uri="javafx:com.sun.javafx.tools.ant" classpath="${jdk.home.1.8}/lib/ant-javafx.jar"/>
+  </target>
+  
+  <target name="clean.artifact.gui" description="clean GUI artifact output">
+    <delete dir="${artifact.output.gui}"/>
+  </target>
+  
+  <target name="artifact.gui" depends="init.artifacts, compile.module.tsa-software-2017" description="Build &#39;GUI&#39; artifact" xmlns:fx="javafx:com.sun.javafx.tools.ant">
+    <mkdir dir="${artifact.output.gui}"/>
+    <ant antfile="" target="null" dir="">
+      <property name="artifact.output.path" value="${artifact.output.gui}"/>
+    </ant>
+    <copy file="${basedir}/commons-codec-1.11.jar" tofile="${artifact.temp.output.}/commons-codec-1.11.jar"/>
+    <copy todir="${artifact.temp.output.}">
+      <fileset dir="${tsa-software-2017.output.dir}"/>
+    </copy>
+    <fx:fileset id="all_but_" dir="${artifact.temp.output.}" includes="**/*.jar">
+      <exclude name=""/>
+    </fx:fileset>
+    <fx:fileset id="all_" dir="${artifact.temp.output.}" includes="**/*.jar"/>
+    <fx:application id="_id" name="GUI" mainClass="GUI.MainWindow" version="0.0.8"/>
+    <fx:csstobin outdir="${artifact.temp.output.}">
+      <fileset dir="${artifact.temp.output.}" includes="**/*.css"/>
+    </fx:csstobin>
+    <fx:jar destfile="${artifact.temp.output.}/">
+      <fx:application refid="_id"/>
+      <fileset dir="${artifact.temp.output.}" excludes="**/*.jar"/>
+      <fx:resources>
+        <fx:fileset refid="all_but_"/>
+      </fx:resources>
+      <manifest>
+        <attribute name="Implementation-Title" value="TSA-Software-2017-GUI"/>
+        <attribute name="Implementation-Version" value="0.0.8"/>
+        <attribute name="Implementation-Vendor" value="Monarch TSA and TriHard Studios"/>
+      </manifest>
+    </fx:jar>
+    <fx:deploy width="600" height="400" updatemode="background" outdir="${artifact.temp.output.}/deploy" outfile="">
+      <fx:application refid="_id"/>
+      <fx:info title="TSA-Software-2017-GUI" vendor="Monarch TSA and TriHard Studios"/>
+      <fx:resources>
+        <fx:fileset refid="all_"/>
+      </fx:resources>
+    </fx:deploy>
+    <copy todir="${artifact.output.gui}">
+      <fileset dir="${artifact.temp.output.}/deploy"/>
+    </copy>
+    <delete includeemptydirs="true">
+      <fileset dir="${artifact.temp.output.}"/>
+    </delete>
+  </target>
+  
+  <target name="artifact.tsa-software-2017:jar" depends="init.artifacts" description="Build &#39;TSA-Software-2017:jar&#39; artifact">
+    <property name="artifact.temp.output.tsa-software-2017:jar" value="${artifacts.temp.dir}/TSA_Software_2017_jar"/>
+    <mkdir dir="${artifact.temp.output.tsa-software-2017:jar}"/>
+    <jar destfile="${temp.jar.path.TSA-Software-2017.jar}" duplicate="preserve" filesetmanifest="mergewithoutmain"/>
+    <copy file="${temp.jar.path.TSA-Software-2017.jar}" tofile="${artifact.temp.output.tsa-software-2017:jar}/TSA-Software-2017.jar"/>
+  </target>
+  
+  <target name="build.all.artifacts" depends="artifact.gui, artifact.tsa-software-2017:jar" description="Build all artifacts">
+    <mkdir dir="${artifact.output.tsa-software-2017:jar}"/>
+    <copy todir="${artifact.output.tsa-software-2017:jar}">
+      <fileset dir="${artifact.temp.output.tsa-software-2017:jar}"/>
+    </copy>
+    
+    <!-- Delete temporary files -->
+    <delete dir="${artifacts.temp.dir}"/>
+  </target>
+  
+  <target name="all" depends="build.modules, build.all.artifacts" description="build all"/>
+</project>

@@ -32,7 +32,7 @@ public class PopUp extends Application {
             AnchorPane controller = new AnchorPane();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/GUI/popUp.fxml"));
             loader.setController(controller);
-            popup.getContent().add((Parent)loader.load());
+            popup.getContent().add(loader.load());
             primaryStage.getIcons().add(new Image("/GUI/Logo.png"));
             primaryStage.setTitle("Output");
         try {

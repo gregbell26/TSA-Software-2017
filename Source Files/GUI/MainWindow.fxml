@@ -50,8 +50,9 @@
       </Text>
       <MenuButton fx:id="Menu" contentDisplay="CENTER" layoutX="146.0" layoutY="148.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="308.0" styleClass="Menu" stylesheets="@style.css" text="Encryption Methods">
         <items>
-          <MenuItem fx:id="ItemOne" mnemonicParsing="false" onAction="#HandleCaesarSelection" text="Caesar Cypher" />
+            <MenuItem mnemonicParsing="false" onAction="#HandleB64Selection" text="Base64" />
           <MenuItem fx:id="ItemTwo" mnemonicParsing="false" onAction="#Handle3DESSelection" text="3DES" />
+          <MenuItem fx:id="ItemOne" mnemonicParsing="false" onAction="#HandleCaesarSelection" text="Caesar Cypher" />
         </items>
       </MenuButton>
       <TextField fx:id="StatusBox" editable="false" layoutX="469.0" layoutY="148.0" prefHeight="25.0" prefWidth="96.0">

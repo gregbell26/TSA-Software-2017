@@ -71,7 +71,7 @@ public class CaesarCypher implements Encryption, Decryption {
 
     private static String decryptedText;
 
-    @Override
+
     public boolean passMatch(String key) {
         float keyIn= 0;
         try {
@@ -80,11 +80,7 @@ public class CaesarCypher implements Encryption, Decryption {
         }catch (Exception InputMismatchException){
             System.out.println();
         }
-        if (keyIn == this.key)
-
-            return true;
-        else
-            return false;
+        return keyIn == this.key;
     }
 
     @Override

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_tsa-software-2017" default="compile.module.tsa-software-2017">
+  <dirname property="module.tsa-software-2017.basedir" file="${ant.file.module_tsa-software-2017}"/>
+  
+  <property name="module.jdk.home.tsa-software-2017" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.tsa-software-2017" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.tsa-software-2017" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.tsa-software-2017" value="-encoding UTF-8 -source 1.8 -target 1.8 ${compiler.args}"/>
+  
+  <property name="tsa-software-2017.output.dir" value="${module.tsa-software-2017.basedir}/out/production/TSA-Software-2017"/>
+  <property name="tsa-software-2017.testoutput.dir" value="${module.tsa-software-2017.basedir}/out/test/TSA-Software-2017"/>
+  
+  <path id="tsa-software-2017.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="tsa-software-2017.module.production.classpath">
+    <path refid="${module.jdk.classpath.tsa-software-2017}"/>
+    <pathelement location="${basedir}/commons-codec-1.11.jar"/>
+  </path>
+  
+  <path id="tsa-software-2017.runtime.production.module.classpath">
+    <pathelement location="${tsa-software-2017.output.dir}"/>
+    <pathelement location="${basedir}/commons-codec-1.11.jar"/>
+  </path>
+  
+  <path id="tsa-software-2017.module.classpath">
+    <path refid="${module.jdk.classpath.tsa-software-2017}"/>
+    <pathelement location="${tsa-software-2017.output.dir}"/>
+    <pathelement location="${basedir}/commons-codec-1.11.jar"/>
+  </path>
+  
+  <path id="tsa-software-2017.runtime.module.classpath">
+    <pathelement location="${tsa-software-2017.testoutput.dir}"/>
+    <pathelement location="${tsa-software-2017.output.dir}"/>
+    <pathelement location="${basedir}/commons-codec-1.11.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.tsa-software-2017">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.tsa-software-2017">
+    <patternset refid="excluded.from.module.tsa-software-2017"/>
+  </patternset>
+  
+  <path id="tsa-software-2017.module.sourcepath">
+    <dirset dir="${module.tsa-software-2017.basedir}">
+      <include name="Source Files"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.tsa-software-2017" depends="compile.module.tsa-software-2017.production,compile.module.tsa-software-2017.tests" description="Compile module TSA-Software-2017"/>
+  
+  <target name="compile.module.tsa-software-2017.production" depends="register.custom.compilers" description="Compile module TSA-Software-2017; production classes">
+    <mkdir dir="${tsa-software-2017.output.dir}"/>
+    <javac2 destdir="${tsa-software-2017.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.tsa-software-2017}/javac">
+      <compilerarg line="${compiler.args.tsa-software-2017}"/>
+      <bootclasspath refid="tsa-software-2017.module.bootclasspath"/>
+      <classpath refid="tsa-software-2017.module.production.classpath"/>
+      <src refid="tsa-software-2017.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.tsa-software-2017"/>
+    </javac2>
+    
+    <copy todir="${tsa-software-2017.output.dir}">
+      <fileset dir="${module.tsa-software-2017.basedir}/Source Files">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.tsa-software-2017.tests" depends="register.custom.compilers,compile.module.tsa-software-2017.production" description="compile module TSA-Software-2017; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.tsa-software-2017" description="cleanup module">
+    <delete dir="${tsa-software-2017.output.dir}"/>
+    <delete dir="${tsa-software-2017.testoutput.dir}"/>
+  </target>
+</project>

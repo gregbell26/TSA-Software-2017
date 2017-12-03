@@ -5,20 +5,16 @@ import java.io.*;
 
 /**
  * Bugs:
- * RSA. Although its not here the stuff that we are using in a test area is not working. It is not decrpting nor encrypting correctly
- *
+ * None in this file
  * Solutions:
- * Well, I could just pray
- *
+ * Tell Michal to get off his lazy ass and code the fucking RSA
  *
  * ToDo:
  * RSA!!!!!!!!
- * Comments!!!!!!!!!!
  *
  * Notes:
  * Keep this file VERY clean it should only call the methods and print the output
- * When Gregory programed this he listened to a lot of All American Rejects.
- * This file was used to test the backend.. With the gui it is not nessary
+ * This file was used to test the backend.. With the gui it is not necessary
  */
 
 public class MainFunction{
@@ -95,11 +91,11 @@ public class MainFunction{
 
                 if (GlobalVars.encrypt){//when encrpyt is set to true encryt any text in the textIn variable
                     //this is a very stupid desioion but this is the best way to do this I think
-                    if (tripleDES.getEncryptedText() != null) {
+                    if (TripleDES.getEncryptedText() != null) {
                         //print.ln("3D encrypt");
                         tripleDES.encrypt();
                     }
-                    else if (caesarCypher.getEncryptedText() != null) {
+                    else if (CaesarCypher.getEncryptedText() != null) {
                         //print.ln("Caeser encrypt");
                         caesarCypher.encrypt();
                     }
@@ -129,10 +125,10 @@ public class MainFunction{
                 }
 
                 if (GlobalVars.decrypt == true){//checks if we are able to decrypt
-                    if (tripleDES.getEncryptedText() != null) {
+                    if (TripleDES.getEncryptedText() != null) {
                         tripleDES.decrypt();
                     }
-                    else if (caesarCypher.getEncryptedText() != null) {
+                    else if (CaesarCypher.getEncryptedText() != null) {
                         caesarCypher.decrypt();
                     }
                     print.ln("Done.");

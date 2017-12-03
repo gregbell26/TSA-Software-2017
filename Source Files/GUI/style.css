@@ -49,6 +49,7 @@
 
 
 .context-menu {
+
     -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
     -fx-background-color: #f4f4f4;
     -fx-background-insets: 0;

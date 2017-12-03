@@ -6,10 +6,10 @@ public interface Encryption  {
     String text = "";
     String encryptedText = "";
 
-   public void setAll(String userIn, String userIn1);
+   void setAll(String userIn, String userIn1);
 
 
-   public void encrypt()throws Exception;
+   void encrypt()throws Exception;
 
 
 }

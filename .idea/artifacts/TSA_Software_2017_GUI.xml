@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="TSA-Software-2017-GUI">
+    <output-path>$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="alias" value="" />
+        <option name="appClass" value="GUI.MainWindow" />
+        <option name="description" value="" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="icons">
+          <JavaFxApplicationIcons>
+            <option name="linuxIcon" value="$PROJECT_DIR$/Source Files/GUI/Logo.png" />
+            <option name="windowsIcon" value="$PROJECT_DIR$/Source Files/GUI/logo_qPS_icon.ico" />
+          </JavaFxApplicationIcons>
+        </option>
+        <option name="keystore" value="" />
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="TSA-Encryption" />
+        <option name="vendor" value="TriHard Studios" />
+        <option name="version" value="0.8.9" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="TSA_Software_2017.jar">
+        <element id="module-output" name="TSA-Software-2017" />
+        <element id="file-copy" path="$PROJECT_DIR$/commons-codec-1.11.jar" />
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -2,23 +2,31 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="GUI" />
+      <artifact name="TSA-Software-2017-GUI" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8a9d3b6-a99e-4203-ae54-bfc5a0e3a299" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source Files/GUI/Logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/GUI.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source Files/Backend/GUIBackend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source Files/GUI/PopUp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Source Files/GUI/popUp.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/TSA_Software_2017_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/TSA_Software_2017_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source Files/Backend/GlobalFuncts.java" afterPath="$PROJECT_DIR$/Source Files/Backend/GlobalFuncts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source Files/Backend/MainFunction.java" afterPath="$PROJECT_DIR$/Source Files/Backend/MainFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml" afterPath="$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source Files/GUI/MainWindow.java" afterPath="$PROJECT_DIR$/Source Files/GUI/MainWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Source Files/GUI/style.css" afterPath="$PROJECT_DIR$/Source Files/GUI/style.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/TSA_Software_2017_GUI.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Source Files/Backend/Base64Encryption.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Source Files/GUI/META-INF/MANIFEST.MF" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/GUI.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/TSA_Software_2017_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/TSA_Software_2017_jar.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/CaesarCypher.java" afterPath="$PROJECT_DIR$/Source Files/Backend/CaesarCypher.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/Decryption.java" afterPath="$PROJECT_DIR$/Source Files/Backend/Decryption.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/Encryption.java" afterPath="$PROJECT_DIR$/Source Files/Backend/Encryption.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/GUIBackend.java" afterPath="$PROJECT_DIR$/Source Files/Backend/GUIBackend.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/MainFunction.java" afterPath="$PROJECT_DIR$/Source Files/Backend/MainFunction.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/TripleDES.java" afterPath="$PROJECT_DIR$/Source Files/Backend/TripleDES.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml" afterPath="$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml" />
+      <change beforePath="$PROJECT_DIR$/Source Files/GUI/MainWindow.java" afterPath="$PROJECT_DIR$/Source Files/GUI/MainWindow.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/GUI/PopUp.java" afterPath="$PROJECT_DIR$/Source Files/GUI/PopUp.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/GUI/style.css" afterPath="$PROJECT_DIR$/Source Files/GUI/style.css" />
+      <change beforePath="$PROJECT_DIR$/Source Files/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/Source Files/META-INF/MANIFEST.MF" />
+      <change beforePath="$PROJECT_DIR$/out/production/TSA-Software-2017/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/production/TSA-Software-2017/META-INF/MANIFEST.MF" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,23 +36,17 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="printScope" value="1" />
+    <option name="OUTPUT_DIRECTORY" value="E:\Current Project\Coding\Java\TSA\TSA-Software-2017\exportToHTML" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainFunction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source Files/Backend/MainFunction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="137" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state relative-caret-position="794">
+              <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,60 +54,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source Files/GUI/style.css">
+      <file leaf-file-name="GUIBackend.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source Files/Backend/GUIBackend.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainWindow.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="20" column="142" lean-forward="false" selection-start-line="20" selection-start-column="142" selection-end-line="20" selection-end-column="142" />
+            <state relative-caret-position="2091">
+              <caret line="127" column="39" lean-forward="false" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
               <folding>
-                <marker date="1512008340033" expanded="true" signature="3482:3585" ph="..." />
-                <marker date="1512008340033" expanded="true" signature="3498:3569" ph="..." />
+                <element signature="method#GUIBackend#0;class#GUIBackend#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GlobalFuncts.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source Files/Backend/GlobalFuncts.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TripleDES.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source Files/Backend/TripleDES.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
-              <caret line="74" column="10" lean-forward="false" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CaesarCypher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source Files/Backend/CaesarCypher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -116,10 +72,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="package-info" />
         <option value="FxmlFile" />
         <option value="JavaFXApplication" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -159,18 +115,20 @@
         <option value="$PROJECT_DIR$/Source Files/Backend/ErrorChecker.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/globalFuncts.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/Encryption.java" />
-        <option value="$PROJECT_DIR$/Source Files/Backend/Decryption.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/RSA.java" />
+        <option value="$PROJECT_DIR$/Source Files/Backend/GlobalFuncts.java" />
+        <option value="$PROJECT_DIR$/Source Files/GUI/popUp.fxml" />
+        <option value="$PROJECT_DIR$/Source Files/GUI/PopUp.java" />
+        <option value="$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml" />
+        <option value="$PROJECT_DIR$/Source Files/Backend/MainFunction.java" />
+        <option value="$PROJECT_DIR$/Source Files/Backend/Base64.java" />
+        <option value="$PROJECT_DIR$/Source Files/Backend/Decryption.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/CaesarCypher.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/TripleDES.java" />
-        <option value="$PROJECT_DIR$/Source Files/GUI/style.css" />
-        <option value="$PROJECT_DIR$/Source Files/Backend/GlobalFuncts.java" />
-        <option value="$PROJECT_DIR$/Source Files/Backend/MainFunction.java" />
-        <option value="$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml" />
-        <option value="$PROJECT_DIR$/Source Files/GUI/popUp.fxml" />
         <option value="$PROJECT_DIR$/Source Files/GUI/MainWindow.java" />
+        <option value="$PROJECT_DIR$/Source Files/GUI/style.css" />
+        <option value="$PROJECT_DIR$/Source Files/Backend/Base64Encryption.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/GUIBackend.java" />
-        <option value="$PROJECT_DIR$/Source Files/GUI/PopUp.java" />
       </list>
     </option>
   </component>
@@ -204,7 +162,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -233,25 +194,22 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Source Files/GUI/logo_qPS_icon.ico" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
-    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="tsa-software-2017" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -272,6 +230,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.MainWindow">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
     <configuration name="Backend" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Backend.MainFunction" />
@@ -324,12 +288,6 @@
       <module name="TSA-Software-2017" />
       <envs />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
@@ -364,12 +322,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -403,6 +355,12 @@
       <envs />
       <properties />
       <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -480,7 +438,15 @@
       <workItem from="1511559519225" duration="63000" />
       <workItem from="1511972352743" duration="5637000" />
       <workItem from="1511993261425" duration="4700000" />
-      <workItem from="1512000924393" duration="11255000" />
+      <workItem from="1512000924393" duration="13296000" />
+      <workItem from="1512015505471" duration="631000" />
+      <workItem from="1512051447561" duration="1209000" />
+      <workItem from="1512058548050" duration="76000" />
+      <workItem from="1512142627753" duration="2897000" />
+      <workItem from="1512145835096" duration="3446000" />
+      <workItem from="1512169565598" duration="4891000" />
+      <workItem from="1512243065181" duration="1175000" />
+      <workItem from="1512244560455" duration="856000" />
     </task>
     <task id="LOCAL-00001" summary="Hrrrrmm This is a simple test thingy">
       <created>1505943693175</created>
@@ -671,26 +637,32 @@
       <option name="project" value="LOCAL" />
       <updated>1511978152026</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Main GUI is done">
+      <created>1512013390843</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1512013390843</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82566000" />
+    <option name="totallyTimeSpent" value="99788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3255814" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3252376" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -765,28 +737,20 @@
     <MESSAGE value="Changed Encryption class to an interface. Not usable Yet." />
     <MESSAGE value="Interfaces!!" />
     <MESSAGE value="GUI has been started" />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI has been started" />
+    <MESSAGE value="Main GUI is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main GUI is done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/MainFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source Files/Backend/Encryption.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -840,14 +804,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source Files/Backend/ErrorChecker.java" />
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/Encryption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -877,32 +833,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/Decryption.java">
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/ExportWindow.java" />
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/popUp.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="40" lean-forward="false" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/GUI/ExportWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="142" lean-forward="false" selection-start-line="20" selection-start-column="142" selection-end-line="20" selection-end-column="142" />
-          <folding>
-            <marker date="1512008340033" expanded="true" signature="3482:3585" ph="..." />
-            <marker date="1512008340033" expanded="true" signature="3498:3569" ph="..." />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
@@ -912,72 +848,15 @@
     <entry file="file://$PROJECT_DIR$/Source Files/Backend/GlobalFuncts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/CaesarCypher.java">
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/GUI/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/MainFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="137" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/TripleDES.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="74" column="10" lean-forward="false" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/GUI/PopUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="34" column="48" lean-forward="true" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/GUIBackend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="71" column="57" lean-forward="false" selection-start-line="71" selection-start-column="57" selection-end-line="71" selection-end-column="57" />
-          <folding>
-            <element signature="e#2672#2673#0" expanded="true" />
-            <element signature="e#2708#2709#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/GUI/popUp.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        <state relative-caret-position="594">
+          <caret line="58" column="32" lean-forward="false" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -985,18 +864,90 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/MainFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/Decryption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/Encryption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/CaesarCypher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/PopUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Source Files/GUI/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="333">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/Base64Encryption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="32" />
+          <folding>
+            <element signature="e#804#805#0" expanded="false" />
+            <element signature="e#840#841#0" expanded="false" />
+            <element signature="e#1175#1176#0" expanded="false" />
+            <element signature="e#1211#1212#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/TripleDES.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-449">
+          <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/GUIBackend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2091">
+          <caret line="127" column="39" lean-forward="false" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
+          <folding>
+            <element signature="method#GUIBackend#0;class#GUIBackend#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+        <state relative-caret-position="794">
+          <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1008,8 +959,15 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
-          <last-edited>TSA-Software-2017:jar</last-edited>
+          <artifact-editor>
+            <show-content>
+              <type id="javaee-facet-resources" />
+              <type id="library" />
+              <type id="artifact" />
+              <type id="jpa-descriptors" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>TSA-Software-2017-GUI</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1062,6 +1020,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

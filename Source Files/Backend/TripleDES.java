@@ -1,6 +1,17 @@
 package Backend;
+/**
+ * This file is used to encrypt and decrpt messages using Triple DES
+ * This file is used in MainFunction and GUIBackend.
+ * MainFunction was used to test the backend while GUIBackend is the file that ties the backend to the GUI
+ * @music All American Rejects
+ * @author Gregory Bell
+ * @company TriHard Studios
+ * @version 1.0
+ */
 
+//external libraries
 import org.apache.commons.codec.binary.Base64;
+//eof external libraries
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
@@ -9,7 +20,7 @@ import java.security.MessageDigest;
 import java.util.Arrays;
 
 public class TripleDES implements Encryption, Decryption {
-    //instance vars
+    //Encryption Vars
     private String key;
     private String text;
     private static String encryptedText;
@@ -20,11 +31,11 @@ public class TripleDES implements Encryption, Decryption {
     }
 
     /**
-     *
-     * @param keyIn
-     * @param textIn
+     * This method takes the variables when 3DES is selected and sets them into their equivalent
+     * private instace variable
+     * @param keyIn The inputted key that get passed to the string key
+     * @param textIn the inputted text that get passed to the string text
      */
-
     public void setAll(String keyIn, String textIn){
         encryptedText = "DEFAULT";
         text = textIn;
@@ -32,8 +43,8 @@ public class TripleDES implements Encryption, Decryption {
     }
 
     /**
-     *
-     * @throws Exception
+     * Encrypts the private variable text with the password
+     * @throws Exception Catches the exception thrown by message digest, and
      */
     @Override
     public void encrypt() throws Exception {
@@ -70,20 +81,14 @@ public class TripleDES implements Encryption, Decryption {
 
     private static String decryptedText;
 
-    @Override
     public boolean passMatch(String keyIn){
         //key = "";//avoiding null pointers
-        if(key.equals(keyIn)){
-            return true;
-        }
-        else {
-            return false;
-        }
+        return key.equals(keyIn);
 
     }
 
     public void decrypt()throws Exception{
-        String encryptedText = this.encryptedText;
+        String encryptedText = TripleDES.encryptedText;
         byte[] message = Base64.decodeBase64(encryptedText.getBytes("utf-8"));
 
         MessageDigest md = MessageDigest.getInstance("SHA-1");
