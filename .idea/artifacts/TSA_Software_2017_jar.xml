@@ -1,6 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="TSA-Software-2017:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/TSA_Software_2017_jar</output-path>
-    <root id="archive" name="TSA-Software-2017.jar" />
-  </artifact>
-</component>

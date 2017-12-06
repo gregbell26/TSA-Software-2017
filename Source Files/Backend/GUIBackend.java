@@ -146,7 +146,12 @@ public class GUIBackend {
     //-------------------------EOF-DECRYPTION---------------------------------
     //------------------------------------------------------------------------
 
+
+
     public void clearAll(){
+        encryptedText = null;
+        decryptedText = null;
+        encryptionKey = null;
         base64Encryption.clearAll();
         caesarCypher.clearAll();
         tripleDES.clearAll();

@@ -7,26 +7,203 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8a9d3b6-a99e-4203-ae54-bfc5a0e3a299" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/TSA_Software_2017_GUI.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Source Files/Backend/Base64Encryption.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/Source Files/GUI/META-INF/MANIFEST.MF" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/GUI.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/TSA_Software_2017_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/TSA_Software_2017_jar.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/TSA_Software_2017_Backend_jar.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Source Files/GUI/MainWindowController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Source Files/GUI/PopupWindow.fxml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Source Files/GUI/PopupWindow.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/TSA_Software_2017_jar.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Source Files/Backend/CaesarCypher.java" afterPath="$PROJECT_DIR$/Source Files/Backend/CaesarCypher.java" />
-      <change beforePath="$PROJECT_DIR$/Source Files/Backend/Decryption.java" afterPath="$PROJECT_DIR$/Source Files/Backend/Decryption.java" />
-      <change beforePath="$PROJECT_DIR$/Source Files/Backend/Encryption.java" afterPath="$PROJECT_DIR$/Source Files/Backend/Encryption.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/Base64Encryption.java" afterPath="$PROJECT_DIR$/Source Files/Backend/Base64Encryption.java" />
       <change beforePath="$PROJECT_DIR$/Source Files/Backend/GUIBackend.java" afterPath="$PROJECT_DIR$/Source Files/Backend/GUIBackend.java" />
-      <change beforePath="$PROJECT_DIR$/Source Files/Backend/MainFunction.java" afterPath="$PROJECT_DIR$/Source Files/Backend/MainFunction.java" />
-      <change beforePath="$PROJECT_DIR$/Source Files/Backend/TripleDES.java" afterPath="$PROJECT_DIR$/Source Files/Backend/TripleDES.java" />
       <change beforePath="$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml" afterPath="$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml" />
       <change beforePath="$PROJECT_DIR$/Source Files/GUI/MainWindow.java" afterPath="$PROJECT_DIR$/Source Files/GUI/MainWindow.java" />
-      <change beforePath="$PROJECT_DIR$/Source Files/GUI/PopUp.java" afterPath="$PROJECT_DIR$/Source Files/GUI/PopUp.java" />
-      <change beforePath="$PROJECT_DIR$/Source Files/GUI/style.css" afterPath="$PROJECT_DIR$/Source Files/GUI/style.css" />
-      <change beforePath="$PROJECT_DIR$/Source Files/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/Source Files/META-INF/MANIFEST.MF" />
-      <change beforePath="$PROJECT_DIR$/out/production/TSA-Software-2017/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/production/TSA-Software-2017/META-INF/MANIFEST.MF" />
+      <change beforePath="$PROJECT_DIR$/Source Files/GUI/PopUp.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Source Files/GUI/popUp.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/GUI/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017/TSA_Software_2017.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017/TSA_Software_2017.jnlp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/TSA_Software_2017.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/TSA_Software_2017.jnlp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/TSA-Software-2017-GUI.exe" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/TSA-Software-2017-GUI.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/app/TSA-Software-2017-GUI.cfg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/msvcp140.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/packager.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/COPYRIGHT" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/README.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/THIRDPARTYLICENSEREADME-JAVAFX.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/THIRDPARTYLICENSEREADME.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/Welcome.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/JAWTAccessBridge-64.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/JavaAccessBridge-64.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/WindowsAccessBridge-64.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-console-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-datetime-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-debug-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-errorhandling-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-file-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-file-l1-2-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-file-l2-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-handle-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-heap-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-interlocked-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-libraryloader-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-localization-l1-2-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-memory-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-namedpipe-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-processenvironment-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-processthreads-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-processthreads-l1-1-1.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-profile-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-rtlsupport-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-string-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-synch-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-synch-l1-2-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-sysinfo-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-timezone-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-core-util-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-crt-conio-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-crt-convert-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-crt-environment-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-crt-filesystem-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-crt-heap-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-crt-locale-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-crt-math-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-crt-multibyte-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-crt-private-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-crt-process-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-crt-runtime-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-crt-stdio-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-crt-string-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-crt-time-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/api-ms-win-crt-utility-l1-1-0.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/attach.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/awt.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/bci.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/concrt140.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/dcpr.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/decora_sse.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/deploy.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/dt_shmem.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/dt_socket.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/fontmanager.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/fxplugins.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/glass.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/glib-lite.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/gstreamer-lite.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/hprof.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/instrument.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/j2pcsc.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/j2pkcs11.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/jaas_nt.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/java.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/java_crw_demo.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/javafx_font.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/javafx_font_t2k.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/javafx_iio.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/jawt.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/jdwp.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/jfr.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/jfxmedia.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/jfxwebkit.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/jli.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/jpeg.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/jsdt.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/jsound.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/jsoundds.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/kcms.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/lcms.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/management.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/mlib_image.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/msvcp140.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/msvcr100.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/net.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/nio.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/npt.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/plugin2/msvcr100.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/plugin2/npjp2.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/prism_common.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/prism_d3d.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/prism_sw.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/resource.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/sawindbg.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/server/Xusage.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/server/classes.jsa" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/server/jvm.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/splashscreen.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/sunec.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/sunmscapi.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/t2k.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/ucrtbase.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/unpack.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/vcruntime140.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/verify.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/w2k_lsa_auth.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/bin/zip.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/accessibility.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/amd64/jvm.cfg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/calendars.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/classlist" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/cmm/CIEXYZ.pf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/cmm/GRAY.pf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/cmm/LINEAR_RGB.pf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/cmm/PYCC.pf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/cmm/sRGB.pf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/content-types.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/currency.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/ext/meta-index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/flavormap.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/fontconfig.bfc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/fontconfig.properties.src" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/fonts/LucidaBrightDemiBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/fonts/LucidaBrightDemiItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/fonts/LucidaBrightItalic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/fonts/LucidaBrightRegular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/fonts/LucidaSansDemiBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/fonts/LucidaSansRegular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/fonts/LucidaTypewriterBold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/fonts/LucidaTypewriterRegular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/hijrah-config-umalqura.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/images/cursors/cursors.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/images/cursors/invalid32x32.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/images/cursors/win32_CopyDrop32x32.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/images/cursors/win32_CopyNoDrop32x32.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/images/cursors/win32_LinkDrop32x32.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/images/cursors/win32_LinkNoDrop32x32.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/images/cursors/win32_MoveDrop32x32.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/images/cursors/win32_MoveNoDrop32x32.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/javafx.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/jfr/default.jfc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/jfr/profile.jfc" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/jvm.hprof.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/logging.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/management/jmxremote.access" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/management/jmxremote.password.template" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/management/management.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/management/snmp.acl.template" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/meta-index" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/net.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/psfont.properties.ja" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/psfontj2d.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/security/blacklist" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/security/blacklisted.certs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/security/cacerts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/security/java.policy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/security/java.security" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/security/javaws.policy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/security/trusted.libraries" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/sound.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/tzdb.dat" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/runtime/lib/tzmappings" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA-Software-2017-GUI/vcruntime140.dll" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA_Software_2017.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA_Software_2017.jnlp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/jb-jfx.jks" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/TSA-Software-2017/GUI/MainWindow.fxml" afterPath="$PROJECT_DIR$/out/production/TSA-Software-2017/GUI/MainWindow.fxml" />
+      <change beforePath="$PROJECT_DIR$/out/production/TSA-Software-2017/GUI/popUp.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tsa-software-2017.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tsa-software-2017.xml" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,11 +219,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="794">
-              <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,15 +231,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GUIBackend.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source Files/Backend/GUIBackend.java">
+      <file leaf-file-name="MainWindowController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindowController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
-              <caret line="127" column="39" lean-forward="false" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
+            <state relative-caret-position="1411">
+              <caret line="92" column="14" lean-forward="false" selection-start-line="92" selection-start-column="14" selection-end-line="92" selection-end-column="14" />
               <folding>
-                <element signature="method#GUIBackend#0;class#GUIBackend#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PopupWindow.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Source Files/GUI/PopupWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainWindow.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="53" column="68" lean-forward="false" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PopupWindow.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Source Files/GUI/PopupWindow.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
@@ -73,8 +288,8 @@
       <list>
         <option value="CSS File" />
         <option value="package-info" />
-        <option value="FxmlFile" />
         <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -119,15 +334,20 @@
         <option value="$PROJECT_DIR$/Source Files/Backend/GlobalFuncts.java" />
         <option value="$PROJECT_DIR$/Source Files/GUI/popUp.fxml" />
         <option value="$PROJECT_DIR$/Source Files/GUI/PopUp.java" />
-        <option value="$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml" />
         <option value="$PROJECT_DIR$/Source Files/Backend/MainFunction.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/Base64.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/Decryption.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/CaesarCypher.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/TripleDES.java" />
-        <option value="$PROJECT_DIR$/Source Files/GUI/MainWindow.java" />
         <option value="$PROJECT_DIR$/Source Files/GUI/style.css" />
+        <option value="$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml" />
         <option value="$PROJECT_DIR$/Source Files/Backend/Base64Encryption.java" />
+        <option value="$PROJECT_DIR$/Source Files/GUI/Popup.java" />
+        <option value="$PROJECT_DIR$/Source Files/GUI/PopupWindowController.java" />
+        <option value="$PROJECT_DIR$/Source Files/GUI/MainWindow.java" />
+        <option value="$PROJECT_DIR$/Source Files/GUI/PopupWindow.fxml" />
+        <option value="$PROJECT_DIR$/Source Files/GUI/MainWindowController.java" />
+        <option value="$PROJECT_DIR$/Source Files/GUI/PopupWindow.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/GUIBackend.java" />
       </list>
     </option>
@@ -162,9 +382,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -197,11 +417,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Source Files/GUI/logo_qPS_icon.ico" />
+    <property name="last_opened_file_path" value="F:/AP Java/RSA" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -210,6 +430,8 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="tsa-software-2017" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
+    <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -236,7 +458,7 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="Backend" type="Application" factoryName="Application">
+    <configuration name="Backend " type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Backend.MainFunction" />
       <option name="VM_PARAMETERS" value="" />
@@ -258,25 +480,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="GUI.MainWindow" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="TSA-Software-2017" />
-      <envs />
-    </configuration>
-    <configuration name="PopUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="GUI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="GUI.PopUp" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -374,15 +577,13 @@
       <module name="TSA-Software-2017" />
       <envs />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Application.Backend" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Backend " />
       <item index="1" class="java.lang.String" itemvalue="Application.MainWindow" />
-      <item index="2" class="java.lang.String" itemvalue="Application.PopUp" />
     </list>
     <recent_temporary>
-      <list size="2">
+      <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Application.MainWindow" />
-        <item index="1" class="java.lang.String" itemvalue="Application.PopUp" />
       </list>
     </recent_temporary>
   </component>
@@ -447,6 +648,16 @@
       <workItem from="1512169565598" duration="4891000" />
       <workItem from="1512243065181" duration="1175000" />
       <workItem from="1512244560455" duration="856000" />
+      <workItem from="1512352931511" duration="26000" />
+      <workItem from="1512396970882" duration="397000" />
+      <workItem from="1512397392027" duration="292000" />
+      <workItem from="1512401095167" duration="114000" />
+      <workItem from="1512401228997" duration="951000" />
+      <workItem from="1512402210559" duration="286000" />
+      <workItem from="1512428930818" duration="540000" />
+      <workItem from="1512576882262" duration="5987000" />
+      <workItem from="1512598103904" duration="4794000" />
+      <workItem from="1512603379749" duration="531000" />
     </task>
     <task id="LOCAL-00001" summary="Hrrrrmm This is a simple test thingy">
       <created>1505943693175</created>
@@ -648,7 +859,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99788000" />
+    <option name="totallyTimeSpent" value="113706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -679,7 +890,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -738,32 +949,16 @@
     <MESSAGE value="Interfaces!!" />
     <MESSAGE value="GUI has been started" />
     <MESSAGE value="Main GUI is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main GUI is done" />
+    <MESSAGE value="Project is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project is done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/Encryption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/ErrorChecker.java" />
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/MainFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/PreGui/MainFunction.java" />
     <entry file="file://$PROJECT_DIR$/Source Files/PreGui/MainFunction.java" />
     <entry file="file://$PROJECT_DIR$/Source Files/PreGui/MainFunction.java" />
     <entry file="file://$PROJECT_DIR$/Source Files/PreGui/MainFunction.java" />
@@ -835,40 +1030,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Source Files/GUI/ExportWindow.java" />
     <entry file="file://$PROJECT_DIR$/Source Files/GUI/package-info.java" />
-    <entry file="file://$PROJECT_DIR$/Source Files/GUI/popUp.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/popUp.fxml" />
     <entry file="file://$PROJECT_DIR$/Source Files/Backend/GlobalFuncts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="58" column="32" lean-forward="false" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source Files/Backend/MainFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,7 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,7 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,35 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
           <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/GUI/PopUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/GUI/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/Base64Encryption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="26" lean-forward="true" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="32" />
-          <folding>
-            <element signature="e#804#805#0" expanded="false" />
-            <element signature="e#840#841#0" expanded="false" />
-            <element signature="e#1175#1176#0" expanded="false" />
-            <element signature="e#1211#1212#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -928,6 +1070,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-449">
           <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/Base64Encryption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/Popup.java" />
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/PopupWindowController.java" />
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/PopupWindow.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="68" lean-forward="false" selection-start-line="53" selection-start-column="60" selection-end-line="53" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="31" column="6" lean-forward="false" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="92" column="14" lean-forward="false" selection-start-line="92" selection-start-column="14" selection-end-line="92" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -936,18 +1133,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Source Files/Backend/GUIBackend.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="127" column="39" lean-forward="false" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
-          <folding>
-            <element signature="method#GUIBackend#0;class#GUIBackend#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="675">
+          <caret line="153" column="29" lean-forward="true" selection-start-line="153" selection-start-column="29" selection-end-line="153" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindow.java">
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/PopupWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="133" column="0" lean-forward="true" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+        <state relative-caret-position="442">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -961,13 +1156,13 @@
         <settings>
           <artifact-editor>
             <show-content>
+              <type id="jpa-descriptors" />
+              <type id="artifact" />
               <type id="javaee-facet-resources" />
               <type id="library" />
-              <type id="artifact" />
-              <type id="jpa-descriptors" />
             </show-content>
           </artifact-editor>
-          <last-edited>TSA-Software-2017-GUI</last-edited>
+          <last-edited>TSA-Software-2017-Backend:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1003,7 +1198,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>Android API 27 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

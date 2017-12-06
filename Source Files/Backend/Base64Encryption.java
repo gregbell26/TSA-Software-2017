@@ -1,5 +1,7 @@
 package Backend;
 /**
+ * This will 'encrypt' text useing Base64 hashing
+ * encrypt is in quotes because it is not really encypting but rather hashing it
  * @music Journey
  * @author Gregory Bell
  * @company TriHard Studios
