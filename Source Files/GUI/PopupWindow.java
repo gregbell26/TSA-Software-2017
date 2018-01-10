@@ -55,7 +55,7 @@ public class PopupWindow implements Initializable{
 
             secondaryStage.getIcons().add(new Image("GUI/Logo.png"));
             secondaryStage.setTitle("Output");
-            decryptedOutputBox.setText("DECRYPTION");
+            //decryptedOutputBox.setText("DECRYPTION");
 
             secondaryStage.show();
 
@@ -69,7 +69,7 @@ public class PopupWindow implements Initializable{
 
     }
 
-    @FXML
+
     public void setEncryptionOutputBox(){
         String encryptedText ="";
         encryptedText = MainWindowController.guiBackend.getEncryptedText();
@@ -88,7 +88,6 @@ public class PopupWindow implements Initializable{
 
     }
 
-    @FXML
     private void setDecryptionOutputBox(){
         String decryptedText = "";
 
