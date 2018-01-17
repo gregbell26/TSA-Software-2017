@@ -48,9 +48,10 @@
             <Font name="Roboto Slab Bold" size="25.0" />
          </font>
       </Text>
-      <MenuButton fx:id="Menu" contentDisplay="CENTER" layoutX="146.0" layoutY="148.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="308.0" styleClass="Menu" stylesheets="@style.css" text="Encryption Methods">
+      <MenuButton fx:id="Menu" contentDisplay="CENTER" layoutX="146.0" layoutY="148.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="308.0" styleClass="Menu" stylesheets="@style.css" text="Encryption Methods" AnchorPane.bottomAnchor="227.0" AnchorPane.leftAnchor="146.0" AnchorPane.rightAnchor="146.0" AnchorPane.topAnchor="148.0">
         <items>
             <MenuItem mnemonicParsing="false" onAction="#HandleB64Selection" text="Base64" />
+            <MenuItem mnemonicParsing="false" onAction="#HandleAES256Selection" text="AES 256" />
           <MenuItem fx:id="ItemTwo" mnemonicParsing="false" onAction="#Handle3DESSelection" text="3DES" />
           <MenuItem fx:id="ItemOne" mnemonicParsing="false" onAction="#HandleCaesarSelection" text="Caesar Cypher" />
         </items>

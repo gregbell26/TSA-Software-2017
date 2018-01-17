@@ -34,7 +34,7 @@ public class AES implements Encryption, Decryption {
 
         byte[] digestOfPassword = md.digest(keyin.getBytes("utf-8"));
 
-        byte[] keyBytes = Arrays.copyOf(digestOfPassword, 32);
+        byte[] keyBytes = Arrays.copyOf(digestOfPassword, 16);
 
         //KeyGenerator keyGenerator = new KeyGenerator.getInstance("AES");
         //keyGenerator.init(256);
@@ -42,12 +42,12 @@ public class AES implements Encryption, Decryption {
 
         Cipher cipher = Cipher.getInstance("AES");
 
-        cipher.init(Cipher.DECRYPT_MODE, secretKey);
+        cipher.init(Cipher.ENCRYPT_MODE, secretKey);
 
         byte[] plainTextBytes = text.getBytes("utf-8");
         byte[] encryptedBytes = cipher.doFinal(plainTextBytes);
-        //byte [] base64Bytes = Base64.encodeBase64(buf); enable this to do B64
-        String encryptedText = new String(encryptedBytes);
+        byte [] base64Bytes = Base64.encodeBase64(encryptedBytes); //enable this to do B64
+        String encryptedText = new String(base64Bytes);
 
         this.encryptedText = encryptedText;
     }
@@ -71,6 +71,23 @@ public class AES implements Encryption, Decryption {
     }
 
     public void decrypt()throws Exception{
+        String encryptedText = AES.encryptedText;
+        byte[] base64Decoded = Base64.decodeBase64(encryptedText);
+        MessageDigest md = MessageDigest.getInstance("SHA-1");
+        byte[] digestOfPassword = md.digest(key.getBytes("utf-8"));
+        byte[] keyBytes = Arrays.copyOf(digestOfPassword, 16);
+        SecretKey secretKey = new SecretKeySpec(keyBytes, "AES");
+
+        Cipher cipher = Cipher.getInstance("AES");
+        cipher.init(Cipher.DECRYPT_MODE, secretKey);
+        //byte[] plainTextBytes = text.getBytes("utf-8");
+        byte[] decryptedBytes = cipher.doFinal(base64Decoded);
+        String decryptedText = new String(decryptedBytes);
+
+        this.decryptedText = decryptedText;
+
+
+
 
     }
     public static String getDecryptedText() {

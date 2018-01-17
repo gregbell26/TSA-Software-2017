@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="TSA_Software_2017.jar" size="25773" download="eager" />
+    <jar href="TSA_Software_2017.jar" size="27420" download="eager" />
     <jar href="commons-codec-1.11.jar" size="335042" download="eager" />
   </resources>
   <jfx:javafx-desc  width="600" height="400" main-class="GUI.MainWindow"  name="TSA-Software-2017-GUI" />

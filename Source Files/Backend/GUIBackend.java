@@ -22,6 +22,7 @@ public class GUIBackend {
     private TripleDES tripleDES = new TripleDES();
     private CaesarCypher caesarCypher = new CaesarCypher();
     private Base64Encryption base64Encryption = new Base64Encryption();
+    private AES AES256encryption = new AES();
     //-----------------EOF-CLASSES--------------------------
 
     //--------------------------------------------------------------------------
@@ -39,7 +40,7 @@ public class GUIBackend {
     /**
      * This method takes the text entered in the userInput fields and sets them to the required areas
      *
-     * @param text the text that will get enctryped. Gets passed to the private String notEncryptedText
+     * @param text the text that will get encrypted. Gets passed to the private String notEncryptedText
      * @param key the key that will be passed to the setAll sub class as defined by method
      * @param method decides what encryption algorithm to use
      */
@@ -54,6 +55,9 @@ public class GUIBackend {
         else if (method.equals("Base64")){
             base64Encryption.setAll(key, text);
         }
+        else if (method.equals("AES 256")){
+            AES256encryption.setAll(key, text);
+        }
         notEncryptedText = text;
         encryptionKey = key;
         encryptionMethod =method;
@@ -67,7 +71,7 @@ public class GUIBackend {
      */
     public boolean encrypt()throws Exception{
         if (tripleDES.getEncryptedText() != null) { //Is triple des null? if not run...
-            tripleDES.encrypt();//calls triple des encrytion thingy
+            tripleDES.encrypt();//calls triple des encryption thingy
             encryptedText = tripleDES.getEncryptedText(); //sets the triple des encrypted text to the private string encryptedText
             return true;//read the method description
         }
@@ -79,6 +83,11 @@ public class GUIBackend {
         else if (base64Encryption.getEncryptedText() != null){
             base64Encryption.encrypt();
             encryptedText = base64Encryption.getEncryptedText();
+            return true;
+        }
+        else if (AES256encryption.getEncryptedText() != null){
+            AES256encryption.encrypt();
+            encryptedText = AES256encryption.getEncryptedText();
             return true;
         }
         else {
@@ -129,6 +138,11 @@ public class GUIBackend {
             decryptedText = base64Encryption.getDecryptedText();
             return true;
         }
+        else if (AES256encryption.getEncryptedText() != null){
+            AES256encryption.decrypt();
+            decryptedText = AES256encryption.getDecryptedText();
+            return true;
+        }
         else {//if we had errors decrypting
             return false;//return false
         }
@@ -155,6 +169,7 @@ public class GUIBackend {
         base64Encryption.clearAll();
         caesarCypher.clearAll();
         tripleDES.clearAll();
+
     }
 
 }

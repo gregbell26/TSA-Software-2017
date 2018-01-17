@@ -62,6 +62,13 @@ public class MainWindowController extends MainWindow{
     }
 
     @FXML
+    private void HandleAES256Selection(ActionEvent event){
+        StatusBox.clear();
+        StatusBox.setText("AES 256");
+        System.out.println("INFORMATION: AES 256 Selected");
+    }
+
+    @FXML
     public void encrypt(ActionEvent event)throws Exception{
         guiBackend.clearAll();
         String getText = TextInputFeild.getText();
