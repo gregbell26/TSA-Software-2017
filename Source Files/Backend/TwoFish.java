@@ -36,7 +36,7 @@ public class TwoFish implements Encryption, Decryption{
 
         cipher.init(Cipher.ENCRYPT_MODE, secretKey);
 
-        byte[] encryptedBytes = cipher.doFinal();
+        byte[] encryptedBytes = cipher.doFinal(text.getBytes());
         byte[] base64Encoded = Base64.encodeBase64Chunked(encryptedBytes);
         encryptedText = base64Encoded.toString();
 
@@ -61,10 +61,17 @@ public class TwoFish implements Encryption, Decryption{
     }
 
     public void decrypt()throws Exception{
+        byte[] base64Decode = Base64.decodeBase64(encryptedText.getBytes());
+        SecureRandom passSeed = new SecureRandom(key.getBytes());
+        KeyGenerator generator = KeyGenerator.getInstance("twofish");
+        generator.init(passSeed);
+        SecretKey secretKey = generator.generateKey();
+        Cipher cipher = Cipher.getInstance("twofish");
+        cipher.init(Cipher.DECRYPT_MODE, secretKey);
 
+        byte[] decryptedBytes = cipher.doFinal(base64Decode);
 
-
-
+        decryptedText = decryptedBytes.toString();
 
     }
     public static String getDecryptedText() {

@@ -53,6 +53,7 @@
             <MenuItem mnemonicParsing="false" onAction="#HandleB64Selection" text="Base64" />
             <MenuItem mnemonicParsing="false" onAction="#HandleAES256Selection" text="AES 256" />
           <MenuItem fx:id="ItemTwo" mnemonicParsing="false" onAction="#Handle3DESSelection" text="3DES" />
+            <MenuItem mnemonicParsing="false" onAction="#HandleTwoFishSelection" text="Two Fish" />
           <MenuItem fx:id="ItemOne" mnemonicParsing="false" onAction="#HandleCaesarSelection" text="Caesar Cypher" />
         </items>
       </MenuButton>

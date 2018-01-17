@@ -23,6 +23,7 @@ public class GUIBackend {
     private CaesarCypher caesarCypher = new CaesarCypher();
     private Base64Encryption base64Encryption = new Base64Encryption();
     private AES AES256encryption = new AES();
+    private TwoFish twoFish = new TwoFish();
     //-----------------EOF-CLASSES--------------------------
 
     //--------------------------------------------------------------------------
@@ -58,6 +59,9 @@ public class GUIBackend {
         else if (method.equals("AES 256")){
             AES256encryption.setAll(key, text);
         }
+        else if (method.equals("Two Fish")){
+            twoFish.setAll(key, text);
+        }
         notEncryptedText = text;
         encryptionKey = key;
         encryptionMethod =method;
@@ -88,6 +92,11 @@ public class GUIBackend {
         else if (AES256encryption.getEncryptedText() != null){
             AES256encryption.encrypt();
             encryptedText = AES256encryption.getEncryptedText();
+            return true;
+        }
+        else if (twoFish.getEncryptedText() != null){
+            twoFish.encrypt();
+            encryptedText = twoFish.getEncryptedText();
             return true;
         }
         else {
@@ -143,6 +152,11 @@ public class GUIBackend {
             decryptedText = AES256encryption.getDecryptedText();
             return true;
         }
+        else if (twoFish.getEncryptedText() != null){
+            twoFish.decrypt();
+            decryptedText = twoFish.getDecryptedText();
+            return true;
+        }
         else {//if we had errors decrypting
             return false;//return false
         }
@@ -169,6 +183,8 @@ public class GUIBackend {
         base64Encryption.clearAll();
         caesarCypher.clearAll();
         tripleDES.clearAll();
+        AES256encryption.clearAll();
+        twoFish.clearAll();
 
     }
 

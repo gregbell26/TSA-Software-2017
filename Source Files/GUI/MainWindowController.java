@@ -69,6 +69,13 @@ public class MainWindowController extends MainWindow{
     }
 
     @FXML
+    private void HandleTwoFishSelection(ActionEvent event){
+        StatusBox.clear();
+        StatusBox.setText("Two Fish");
+        System.out.println("INFORMATION: Two Fish Selected");
+    }
+
+    @FXML
     public void encrypt(ActionEvent event)throws Exception{
         guiBackend.clearAll();
         String getText = TextInputFeild.getText();
