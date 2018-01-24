@@ -7,12 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8a9d3b6-a99e-4203-ae54-bfc5a0e3a299" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/Source Files/Backend/BlowFish.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Source Files/Backend/GUIBackend.java" afterPath="$PROJECT_DIR$/Source Files/Backend/GUIBackend.java" />
-      <change beforePath="$PROJECT_DIR$/Source Files/Backend/TwoFish.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml" afterPath="$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml" />
-      <change beforePath="$PROJECT_DIR$/Source Files/GUI/MainWindowController.java" afterPath="$PROJECT_DIR$/Source Files/GUI/MainWindowController.java" />
-      <change beforePath="$PROJECT_DIR$/out/production/TSA-Software-2017/GUI/MainWindow.fxml" afterPath="$PROJECT_DIR$/out/production/TSA-Software-2017/GUI/MainWindow.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -528,7 +524,7 @@
       <workItem from="1516386723689" duration="891000" />
       <workItem from="1516405981056" duration="673000" />
       <workItem from="1516719194100" duration="1351000" />
-      <workItem from="1516805542792" duration="243000" />
+      <workItem from="1516805542792" duration="399000" />
     </task>
     <task id="LOCAL-00001" summary="Hrrrrmm This is a simple test thingy">
       <created>1505943693175</created>
@@ -754,11 +750,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516210752466</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="We are done with twofish. We are swicthed to blowfish, and blow fish is done.">
+      <created>1516805897957</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1516805897957</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130685000" />
+    <option name="totallyTimeSpent" value="130841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -829,7 +832,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Hrrrrmm This is a simple test thingy" />
     <MESSAGE value="Defined the main function" />
     <MESSAGE value="Added a bunch of files and stuff Still haven't wrote any code" />
     <MESSAGE value="." />
@@ -853,7 +855,9 @@
     <MESSAGE value="Started AES256 encryption is done." />
     <MESSAGE value="Wrote twofish encryption" />
     <MESSAGE value="Finished Two Fish. Working on some bugs.." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Two Fish. Working on some bugs.." />
+    <MESSAGE value="Swerw twofish. We are swicthed to blowfish, and blow fish is done." />
+    <MESSAGE value="We are done with twofish. We are swicthed to blowfish, and blow fish is done." />
+    <option name="LAST_COMMIT_MESSAGE" value="We are done with twofish. We are swicthed to blowfish, and blow fish is done." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
