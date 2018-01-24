@@ -69,10 +69,10 @@ public class MainWindowController extends MainWindow{
     }
 
     @FXML
-    private void HandleTwoFishSelection(ActionEvent event){
+    private void HandleBlowFishSelection(ActionEvent event){
         StatusBox.clear();
-        StatusBox.setText("Two Fish");
-        System.out.println("INFORMATION: Two Fish Selected");
+        StatusBox.setText("Blow Fish");
+        System.out.println("INFORMATION: Blow Fish Selected");
     }
 
     @FXML
