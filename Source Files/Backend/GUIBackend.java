@@ -1,24 +1,29 @@
 package Backend;
 
+import Backend.EncryptionMethods.*;
+
 /**
  * This class connects the backend to the GUI.
  * Doing this is better than importing all of the backend.
  * This also makes the MainWindow file look a lot cleaner
- * @music Counting Crows
+ * @music Counting Crows && The Killers
  * @author Gregory Bell
  * @company TriHard Studios
- * @version  0.9.6
+ * @version  1.5.0
  *
  */
 public class GUIBackend {
 
     //A constructor to avoid reprogramming this to use static.
     public GUIBackend(){
-        //HAHA I WILL NOT USE STATIC MOTHER FUCKERS!!!!
+        //HAHA I WILL NOT USE STATIC MOTHER F*CKERS!!!!
     }
 
-
     //------------------CLASSES----------------------------
+    /**
+     * This creates a bunch of private instances of the methods.
+     * The constructors have one purpose, to avoid programing with static.
+     */
     private TripleDES tripleDES = new TripleDES();
     private CaesarCypher caesarCypher = new CaesarCypher();
     private Base64Encryption base64Encryption = new Base64Encryption();
@@ -38,35 +43,7 @@ public class GUIBackend {
     //---------------EOF-PRIVATE-VARS-----------------------
 
 
-    /**
-     * This method takes the text entered in the userInput fields and sets them to the required areas
-     *
-     * @param text the text that will get encrypted. Gets passed to the private String notEncryptedText
-     * @param key the key that will be passed to the setAll sub class as defined by method
-     * @param method decides what encryption algorithm to use
-     */
-    public void setAll(String text, String key, String method){
-        if(method.equals("3DES")){
-            tripleDES.setAll(key, text);
 
-        }
-        else if (method.equals("Caesar")){
-            caesarCypher.setAll(key, text);
-        }
-        else if (method.equals("Base64")){
-            base64Encryption.setAll(key, text);
-        }
-        else if (method.equals("AES 256")){
-            AES256encryption.setAll(key, text);
-        }
-        else if (method.equals("Blow Fish")){
-            blowFish.setAll(key, text);
-        }
-        notEncryptedText = text;
-        encryptionKey = key;
-        encryptionMethod =method;
-
-    }
 
     /**
      * Encrypts but checks if getEncryptedText is null if it is not it'll run that control flow.
@@ -84,20 +61,20 @@ public class GUIBackend {
             encryptedText = caesarCypher.getEncryptedText();//...set...
             return true;//...return......
         }
-        else if (base64Encryption.getEncryptedText() != null){
-            base64Encryption.encrypt();
-            encryptedText = base64Encryption.getEncryptedText();
-            return true;
+        else if (base64Encryption.getEncryptedText() != null){//Is B64 null? If no run...
+            base64Encryption.encrypt();//...encrypt...
+            encryptedText = base64Encryption.getEncryptedText();//...set...
+            return true;//..return...
         }
-        else if (AES256encryption.getEncryptedText() != null){
-            AES256encryption.encrypt();
-            encryptedText = AES256encryption.getEncryptedText();
-            return true;
+        else if (AES256encryption.getEncryptedText() != null){//Is AES null? If not run...
+            AES256encryption.encrypt();//...encrypt...
+            encryptedText = AES256encryption.getEncryptedText();//...set...
+            return true;//...return...
         }
-        else if (blowFish.getEncryptedText() != null){
-            blowFish.encrypt();
-            encryptedText = blowFish.getEncryptedText();
-            return true;
+        else if (blowFish.getEncryptedText() != null){//Is blowfish null? If not run...
+            blowFish.encrypt();//...encrypt...
+            encryptedText = blowFish.getEncryptedText();//...set...
+            return true;//...return...
         }
         else {
             return false;//if the encryption fails return false
@@ -175,7 +152,9 @@ public class GUIBackend {
     //------------------------------------------------------------------------
 
 
-
+    //------------------------------------------------------------------------
+    //-----------------------MISC-FUNCTIONS-----------------------------------
+    //------------------------------------------------------------------------
     public void clearAll(){
         encryptedText = null;
         decryptedText = null;
@@ -187,5 +166,41 @@ public class GUIBackend {
         blowFish.clearAll();
 
     }
+
+    /**
+     * This method takes the text entered in the userInput fields and sets them to the required areas
+     *
+     * @param text the text that will get encrypted. Gets passed to the private String notEncryptedText
+     * @param key the key that will be passed to the setAll sub class as defined by method
+     * @param method decides what encryption algorithm to use. This var comes from the box in the main window
+     */
+    public void setAll(String text, String key, String method){
+        if(method.equals("3DES")){
+            tripleDES.setAll(key, text);
+
+        }
+        else if (method.equals("Caesar")){
+            caesarCypher.setAll(key, text);
+        }
+        else if (method.equals("Base64")){
+            base64Encryption.setAll(key, text);
+        }
+        else if (method.equals("AES 256")){
+            AES256encryption.setAll(key, text);
+        }
+        else if (method.equals("Blow Fish")){
+            blowFish.setAll(key, text);
+        }
+        else {
+            System.err.println("ERROR: No method selected or invalid method selected");
+        }
+        notEncryptedText = text;
+        encryptionKey = key;
+        encryptionMethod =method;
+
+    }
+    //-------------------------------------------------------------------------
+    //------------------------EOF-MISC-FUNCTIONS-------------------------------
+    //-------------------------------------------------------------------------
 
 }

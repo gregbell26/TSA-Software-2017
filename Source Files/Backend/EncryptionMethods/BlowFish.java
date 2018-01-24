@@ -1,17 +1,23 @@
-package Backend;
+package Backend.EncryptionMethods;
+/**
+ * This method was originally going to be TwoFish, Blowfish's successor. But I could not write code that would work consistently
+ * to decrypt. Encrypt worked great, just not decryption.
+ * This uses the Java crypto libaray and the Apache Common Codecs Libaray which is licensed under the Apache Open Source license.
+ * @music Matchbox 20
+ * @author Gregory Bell
+ * @company TriHard Studios
+ * @version 1.0.0
+ */
 
 import org.apache.commons.codec.binary.Base64;
 
 import javax.crypto.Cipher;
-import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
-import java.lang.reflect.Array;
 import java.security.MessageDigest;
-import java.security.SecureRandom;
 import java.util.Arrays;
 
-public class BlowFish implements Encryption, Decryption{
+public final class BlowFish implements Encryption, Decryption{
     private String key;
     private String text;
     private static String encryptedText;
@@ -20,13 +26,13 @@ public class BlowFish implements Encryption, Decryption{
 
     }
 
-    public void setAll(String keyIn, String textIn){
-        encryptedText = "DEFAULT";
-        text = textIn;
-        key = keyIn;
-    }
 
 
+    /**
+     * This is the encrypt method that is called from the GUIBackend.
+     * It encodes the password with SHA-1 then encrypts, then it encodes the encrypted text with B64
+     * @throws Exception MessageDigest, Secret Key, Cipher all throw an exception if they can't find the method we speifed.
+     */
     public void encrypt() throws Exception {
         //SecureRandom passSeed = new SecureRandom(key.getBytes());
         //KeyGenerator generator = KeyGenerator.getInstance("Blowfish");
@@ -95,6 +101,11 @@ public class BlowFish implements Encryption, Decryption{
         encryptedText = null;
         decryptedText = null;
 
+    }
+    public void setAll(String keyIn, String textIn){
+        encryptedText = "DEFAULT";
+        text = textIn;
+        key = keyIn;
     }
 
 

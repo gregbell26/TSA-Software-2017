@@ -1,8 +1,9 @@
-package Backend;
+package Backend.EncryptionMethods;
 /**
  * This file is used to encrypt and decrpt messages using Triple DES
- * This file is used in MainFunction and GUIBackend.
- * MainFunction was used to test the backend while GUIBackend is the file that ties the backend to the GUI
+ * This file is used in BackendTesterMain and GUIBackend.
+ * BackendTesterMain was used to test the backend while GUIBackend is the file that ties the backend to the GUI
+ * This class uses the Java crypto library and the Apache Common codecs Library which is licenced under the Apache Open Source License.
  * @music All American Rejects
  * @author Gregory Bell
  * @company TriHard Studios
@@ -10,8 +11,8 @@ package Backend;
  */
 
 //external libraries
+
 import org.apache.commons.codec.binary.Base64;
-//eof external libraries
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;
@@ -19,7 +20,9 @@ import javax.crypto.spec.SecretKeySpec;
 import java.security.MessageDigest;
 import java.util.Arrays;
 
-public class TripleDES implements Encryption, Decryption {
+//eof external libraries
+
+public final class TripleDES implements Encryption, Decryption {
     //Encryption Vars
     private String key;
     private String text;
@@ -43,8 +46,9 @@ public class TripleDES implements Encryption, Decryption {
     }
 
     /**
-     * Encrypts the private variable text with the password
-     * @throws Exception Catches the exception thrown by message digest, and
+     * This is the encrypt method that is called from the GUIBackend.
+     * It encodes the password with SHA-1 then encrypts, then it encodes the encrypted text with B64
+     * @throws Exception MessageDigest, Secret Key, Cipher all throw an exception if they can't find the method we speifed.
      */
     @Override
     public void encrypt() throws Exception {

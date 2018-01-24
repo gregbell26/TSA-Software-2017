@@ -1,8 +1,9 @@
-package Backend;
-//any user errors in this class will be in the range of 100 - 199
+package Backend.EncryptionMethods;
 
 
-public class CaesarCypher implements Encryption, Decryption {
+import java.util.InputMismatchException;
+
+public final class CaesarCypher implements Encryption, Decryption {
     //private int shift;
     private float key;
     private String text;
@@ -11,29 +12,6 @@ public class CaesarCypher implements Encryption, Decryption {
 
 
     public CaesarCypher(){
-    }
-
-    @Override
-    public void setAll(String key, String userIn1) {
-        float keyIn= 0;
-        try {
-            //System.out.println("Try..");
-            keyIn = Float.parseFloat(key);
-        }catch (Exception InputMismatchException){
-            System.out.println();
-        }
-        if (keyIn <= 2) {
-            print.ln("This cesar cypher is not secure. ");
-        } else {
-            System.out.println("Hi there key");
-
-            this.key = keyIn;
-        }
-        //System.out.println("Hi there text ");
-        text = userIn1;
-        this.encryptMethod = "caesar";
-        encryptedText = "DEFAULT";
-
     }
 
     @Override
@@ -107,6 +85,8 @@ public class CaesarCypher implements Encryption, Decryption {
         return decryptedText;
     }
 
+
+//-------------------------------------MISC-FUNCTIONS----------------------------------------
     public void clearAll(){
         key = 0;
         text = null;
@@ -114,6 +94,35 @@ public class CaesarCypher implements Encryption, Decryption {
         decryptedText = null;
 
     }
+
+    /**
+     * This method takes the variables when caeser  cipher is selected and sets them into their equivalent
+     * private instace variable
+     * @param userIn1 The inputted key that get passed to the string key
+     * @param key the inputted text that get passed to the string text
+     */
+    @Override
+    public void setAll(String key, String userIn1) {
+        float keyIn= 0;
+        try {
+            //System.out.println("Try..");
+            keyIn = Float.parseFloat(key);
+        }catch (Exception IM_EX){
+            System.err.println("ERROR: The password exceeded the maximum float size or it is not a int. The error returned is" + IM_EX);
+        }
+        if (keyIn <= 2) {
+            System.err.println("ERROR: This caesar cipher has an unsecure key. ");
+        } else {
+
+            this.key = keyIn;
+        }
+        //System.out.println("Hi there text ");
+        text = userIn1;
+        this.encryptMethod = "caesar";
+        encryptedText = "DEFAULT";
+
+    }
+
 
 
 

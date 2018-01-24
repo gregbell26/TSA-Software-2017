@@ -1,6 +1,6 @@
-package Backend;
+package Backend.EncryptionMethods;
 //todo comment
-public interface Encryption  {
+interface Encryption  {
 
     float key = 0;
     String text = "";

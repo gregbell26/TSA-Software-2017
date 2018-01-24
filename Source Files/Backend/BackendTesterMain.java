@@ -1,7 +1,9 @@
 package Backend;
 
+import Backend.EncryptionMethods.*;
+
+import java.io.IOException;
 import java.util.Scanner;
-import java.io.*;
 
 /**
  * Bugs:
@@ -17,7 +19,7 @@ import java.io.*;
  * This file was used to test the backend.. With the gui it is not necessary
  */
 
-public class MainFunction{
+public class BackendTesterMain {
     static void Pause(){//this pauses until the user presses a key
         int pause;
         try {
@@ -36,6 +38,9 @@ public class MainFunction{
         //these are the encrytion and decrytion methods
         TripleDES tripleDES = new TripleDES();
         CaesarCypher caesarCypher = new CaesarCypher();
+        Base64Encryption b64 = new Base64Encryption();
+        AES aes = new AES();
+        BlowFish blowFish = new BlowFish();
         Scanner sc = new Scanner(System.in); //a user in thing. Uses the name sc which stands for scanner
         //eof constructor definition
 
@@ -85,7 +90,20 @@ public class MainFunction{
                     //TripleDES tripleDES = new TripleDES(keyIn, textIn);//sets the variables and passes them to the master encryption class
                     GlobalVars.encrypt = true;//says yes we can encrypt
                 }
-                else {//error message
+                else if (userIn.equals("AES")){
+                    aes.setAll(keyIn, textIn);
+                    GlobalVars.encrypt = true;
+                }
+                else if (userIn.equals("B64")){
+                    b64.setAll(keyIn, textIn);
+                    GlobalVars.encrypt = true;
+                }
+                else if (userIn.equals("BF")){
+                    blowFish.setAll(keyIn, textIn);
+                    GlobalVars.encrypt = true;
+                }
+
+                    else {//error message
                     print.ln("That is an invalid method, or it has not been fully implemented into this program.");
                 }
 

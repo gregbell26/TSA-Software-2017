@@ -1,23 +1,15 @@
 package GUI;
-import Backend.GUIBackend;
-import javafx.application.Application;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
-import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import javafx.application.Application;
-import javafx.stage.Stage;
-import javafx.geometry.Pos;
-import javafx.scene.*;
-import javafx.scene.control.*;
-import javafx.scene.layout.*;
-import javafx.stage.*;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -46,14 +38,14 @@ public class PopupWindow implements Initializable{
     void displayPopup() {
         Stage secondaryStage = new Stage();
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("PopupWindow.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("FMXL/PopupWindow.fxml"));
             VBox vBox = loader.load();
             Scene scene = new Scene(vBox);
             //secondaryStage.initModality(Modality.APPLICATION_MODAL);
 
             secondaryStage.setScene(scene);
 
-            secondaryStage.getIcons().add(new Image("GUI/Logo.png"));
+            secondaryStage.getIcons().add(new Image("GUI/Icons/Logo.png"));
             secondaryStage.setTitle("Output");
             //decryptedOutputBox.setText("DECRYPTION");
 

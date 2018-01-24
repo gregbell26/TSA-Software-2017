@@ -1,31 +1,43 @@
-package Backend;
+package Backend.EncryptionMethods;
+/**
+ *  This is the AES 256 encryption class.
+ *  This uses the java crypto library and the Apache common codecs which is licensed under the Apache Open Source License.
+ * @music None :'(
+ * @author Gregory Bell
+ * @company TriHard Studios
+ * @ver 1.0.0
+ */
 
 import org.apache.commons.codec.binary.Base64;
-import java.security.*;
-import javax.crypto.*;
-import javax.crypto.spec.*;
+
 import javax.crypto.Cipher;
-import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 import java.security.MessageDigest;
 import java.util.Arrays;
 
-public class AES implements Encryption, Decryption {
-    private String key;
-    private String text;
-    private static String encryptedText;
+public final class AES implements Encryption, Decryption {
 
-    public AES(){
+    //----------------------------------------------------------------------------------------
+    //----------------------------ENCRYPTION--------------------------------------------------
+    //----------------------------------------------------------------------------------------
+
+    //------------------------PRIVATE-VARS---------------
+    private String key;//the string where the key is stored.
+    private String text;//the string where the plain text is stored.
+    private static String encryptedText;//the string where the encrypted text is stored.
+    //--------------------EOF-PRIVATE-VARS---------------
+
+    public AES(){//constructor to avoid static reprogramming
 
     }
 
-    public void setAll(String keyIn, String textIn){
-        encryptedText = "DEFAULT";
-        text = textIn;
-        key = keyIn;
-    }
 
+    /**
+     * This is the encrypt method that is called from the GUIBackend.
+     * It encodes the password with SHA-1 then encrypts, then it encodes the encrypted text with B64
+     * @throws Exception MessageDigest, Secret Key, Cipher all throw an exception if they can't find the method we speifed.
+     */
 
     public void encrypt() throws Exception {
         String keyin = key;
@@ -36,8 +48,6 @@ public class AES implements Encryption, Decryption {
 
         byte[] keyBytes = Arrays.copyOf(digestOfPassword, 16);
 
-        //KeyGenerator keyGenerator = new KeyGenerator.getInstance("AES");
-        //keyGenerator.init(256);
         SecretKey secretKey = new SecretKeySpec(keyBytes, "AES");
 
         Cipher cipher = Cipher.getInstance("AES");
@@ -46,7 +56,7 @@ public class AES implements Encryption, Decryption {
 
         byte[] plainTextBytes = text.getBytes("utf-8");
         byte[] encryptedBytes = cipher.doFinal(plainTextBytes);
-        byte [] base64Bytes = Base64.encodeBase64(encryptedBytes); //enable this to do B64
+        byte [] base64Bytes = Base64.encodeBase64(encryptedBytes);
         String encryptedText = new String(base64Bytes);
 
         this.encryptedText = encryptedText;
@@ -104,6 +114,18 @@ public class AES implements Encryption, Decryption {
         encryptedText = null;
         decryptedText = null;
 
+    }
+
+    /**
+     * This method takes the variables when 3DES is selected and sets them into their equivalent
+     * private instace variable
+     * @param keyIn The inputted key that get passed to the string key
+     * @param textIn the inputted text that get passed to the string text
+     */
+    public void setAll(String keyIn, String textIn){
+        encryptedText = "DEFAULT";
+        text = textIn;
+        key = keyIn;
     }
 
 

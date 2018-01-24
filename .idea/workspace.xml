@@ -7,8 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8a9d3b6-a99e-4203-ae54-bfc5a0e3a299" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/Source Files/Backend/BlowFish.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/AES.java" afterPath="$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/AES.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/Base64Encryption.java" afterPath="$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/Base64Encryption.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/BlowFish.java" afterPath="$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/BlowFish.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/CaesarCypher.java" afterPath="$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/CaesarCypher.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/Decryption.java" afterPath="$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/Decryption.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/Encryption.java" afterPath="$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/Encryption.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/GUIBackend.java" afterPath="$PROJECT_DIR$/Source Files/Backend/GUIBackend.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/GlobalFuncts.java" afterPath="$PROJECT_DIR$/Source Files/Backend/GlobalFuncts.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/MainFunction.java" afterPath="$PROJECT_DIR$/Source Files/Backend/BackendTesterMain.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/RSA.java" afterPath="$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/RSA.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/Backend/TripleDES.java" afterPath="$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/TripleDES.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/GUI/Logo.png" afterPath="$PROJECT_DIR$/Source Files/GUI/Icons/Logo.png" />
+      <change beforePath="$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml" afterPath="$PROJECT_DIR$/Source Files/GUI/FMXL/MainWindow.fxml" />
+      <change beforePath="$PROJECT_DIR$/Source Files/GUI/MainWindow.java" afterPath="$PROJECT_DIR$/Source Files/GUI/MainWindow.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/GUI/MainWindowController.java" afterPath="$PROJECT_DIR$/Source Files/GUI/MainWindowController.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/GUI/PopupWindow.fxml" afterPath="$PROJECT_DIR$/Source Files/GUI/FMXL/PopupWindow.fxml" />
+      <change beforePath="$PROJECT_DIR$/Source Files/GUI/PopupWindow.java" afterPath="$PROJECT_DIR$/Source Files/GUI/PopupWindow.java" />
+      <change beforePath="$PROJECT_DIR$/Source Files/GUI/logo_qPS_icon.ico" afterPath="$PROJECT_DIR$/Source Files/GUI/Icons/logo_qPS_icon.ico" />
+      <change beforePath="$PROJECT_DIR$/Source Files/GUI/style.css" afterPath="$PROJECT_DIR$/Source Files/GUI/FMXL/style.css" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/TSA_Software_2017.jnlp" afterPath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/TSA_Software_2017.jnlp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA_Software_2017.jnlp" afterPath="$PROJECT_DIR$/out/artifacts/TSA_Software_2017_GUI/bundles/TSA_Software_2017.jnlp" />
+      <change beforePath="$PROJECT_DIR$/out/production/TSA-Software-2017/GUI/Logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/TSA-Software-2017/GUI/MainWindow.fxml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/TSA-Software-2017/GUI/logo_qPS_icon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/TSA-Software-2017/GUI/style.css" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,112 +47,7 @@
     <option name="OUTPUT_DIRECTORY" value="E:\Current Project\Coding\Java\TSA\TSA-Software-2017\exportToHTML" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainWindowController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindowController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="71" column="27" lean-forward="false" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AES.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source Files/Backend/AES.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="34" column="69" lean-forward="false" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GUIBackend.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source Files/Backend/GUIBackend.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="16" lean-forward="true" selection-start-line="0" selection-start-column="16" selection-end-line="2" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PopupWindow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source Files/GUI/PopupWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlowFish.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Source Files/Backend/BlowFish.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source Files/GUI/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainWindow.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="55" column="99" lean-forward="false" selection-start-line="55" selection-start-column="99" selection-end-line="55" selection-end-column="99" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PopupWindow.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Source Files/GUI/PopupWindow.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -176,29 +95,37 @@
         <option value="$PROJECT_DIR$/TSA-Software-2017.iml" />
         <option value="$PROJECT_DIR$/Source Files/Backend/ErrorChecker.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/globalFuncts.java" />
-        <option value="$PROJECT_DIR$/Source Files/Backend/Encryption.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/RSA.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/GlobalFuncts.java" />
         <option value="$PROJECT_DIR$/Source Files/GUI/popUp.fxml" />
         <option value="$PROJECT_DIR$/Source Files/GUI/PopUp.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/MainFunction.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/Base64.java" />
-        <option value="$PROJECT_DIR$/Source Files/Backend/Decryption.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/CaesarCypher.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/Base64Encryption.java" />
         <option value="$PROJECT_DIR$/Source Files/GUI/Popup.java" />
         <option value="$PROJECT_DIR$/Source Files/GUI/PopupWindowController.java" />
-        <option value="$PROJECT_DIR$/Source Files/GUI/MainWindow.java" />
         <option value="$PROJECT_DIR$/Source Files/GUI/PopupWindow.fxml" />
         <option value="$PROJECT_DIR$/Source Files/GUI/PopupWindow.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/TripleDES.java" />
         <option value="$PROJECT_DIR$/Source Files/GUI/style.css" />
-        <option value="$PROJECT_DIR$/Source Files/Backend/AES.java" />
         <option value="$PROJECT_DIR$/Source Files/Backend/TwoFish.java" />
-        <option value="$PROJECT_DIR$/Source Files/Backend/GUIBackend.java" />
-        <option value="$PROJECT_DIR$/Source Files/GUI/MainWindowController.java" />
         <option value="$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml" />
         <option value="$PROJECT_DIR$/Source Files/Backend/BlowFish.java" />
+        <option value="$PROJECT_DIR$/Source Files/GUI/MainWindow.java" />
+        <option value="$PROJECT_DIR$/Source Files/GUI/MainWindowController.java" />
+        <option value="$PROJECT_DIR$/Source Files/Backend/Decryption.java" />
+        <option value="$PROJECT_DIR$/Source Files/Backend/Encryption.java" />
+        <option value="$PROJECT_DIR$/Source Files/Backend/GUIBackend.java" />
+        <option value="$PROJECT_DIR$/Source Files/Backend/AES.java" />
+        <option value="$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/AES.java" />
+        <option value="$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/CaesarCypher.java" />
+        <option value="$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/Base64Encryption.java" />
+        <option value="$PROJECT_DIR$/Source Files/GUI/FMXL/MainWindow.fxml" />
+        <option value="$PROJECT_DIR$/Source Files/GUI/FMXL/PopupWindow.fxml" />
+        <option value="$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/BlowFish.java" />
+        <option value="$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/TripleDES.java" />
+        <option value="$PROJECT_DIR$/Source Files/Backend/BackendTesterMain.java" />
       </list>
     </option>
   </component>
@@ -232,6 +159,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -254,21 +185,19 @@
               <item name="TSA-Software-2017" type="b2602c69:ProjectViewProjectNode" />
               <item name="TSA-Software-2017" type="462c0819:PsiDirectoryNode" />
               <item name="Source Files" type="462c0819:PsiDirectoryNode" />
-              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="Backend" type="462c0819:PsiDirectoryNode" />
+              <item name="EncryptionMethods" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TSA-Software-2017" type="b2602c69:ProjectViewProjectNode" />
               <item name="TSA-Software-2017" type="462c0819:PsiDirectoryNode" />
-              <item name="commons-codec-1.11.jar" type="ab9368bb:PsiFileNode" />
+              <item name="Source Files" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -290,6 +219,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Current Project\Coding\Java\TSA\TSA-Software-2017\Source Files\GUI\Icons" />
+      <recent name="E:\Current Project\Coding\Java\TSA\TSA-Software-2017\Source Files\GUI\FMXL" />
       <recent name="E:\Current Project\Coding\Java\TSA\TSA-Software-2017" />
       <recent name="E:\Current Project\Coding\Java\TSA\TSA-Software-2017\Source Files" />
     </key>
@@ -315,7 +246,7 @@
     </configuration>
     <configuration name="Backend " type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Backend.MainFunction" />
+      <option name="MAIN_CLASS_NAME" value="Backend.BackendTesterMain" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -524,7 +455,8 @@
       <workItem from="1516386723689" duration="891000" />
       <workItem from="1516405981056" duration="673000" />
       <workItem from="1516719194100" duration="1351000" />
-      <workItem from="1516805542792" duration="399000" />
+      <workItem from="1516805542792" duration="1401000" />
+      <workItem from="1516810490267" duration="5942000" />
     </task>
     <task id="LOCAL-00001" summary="Hrrrrmm This is a simple test thingy">
       <created>1505943693175</created>
@@ -757,43 +689,49 @@
       <option name="project" value="LOCAL" />
       <updated>1516805897957</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="We are done with twofish. We are swicthed to blowfish, and blow fish is done.">
+      <created>1516805956580</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1516805956580</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130841000" />
+    <option name="totallyTimeSpent" value="137785000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3248503" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32418162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -908,19 +846,12 @@
         <state relative-caret-position="170">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/RSA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/GUI/Logo.png">
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/Icons/Logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -942,62 +873,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/MainFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/Decryption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/Encryption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/CaesarCypher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/Base64Encryption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Source Files/GUI/Popup.java" />
     <entry file="file://$PROJECT_DIR$/Source Files/GUI/PopupWindowController.java" />
-    <entry file="file://$PROJECT_DIR$/Source Files/GUI/PopupWindow.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/TripleDES.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="89" column="42" lean-forward="true" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/GUI/style.css">
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/FMXL/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
@@ -1005,70 +883,156 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_twofish-java.zip/utils/Twofish/src/Twofish_Algorithm.java" />
     <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="595">
+          <caret line="37" column="88" lean-forward="true" selection-start-line="37" selection-start-column="88" selection-end-line="37" selection-end-column="88" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/AES.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="69" lean-forward="false" selection-start-line="34" selection-start-column="69" selection-end-line="34" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_twofish-java.zip/utils/Twofish/src/Twofish_Algorithm.java" />
-    <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindow.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="55" column="99" lean-forward="false" selection-start-line="55" selection-start-column="99" selection-end-line="55" selection-end-column="99" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source Files/GUI/MainWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="71" column="27" lean-forward="false" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+        <state relative-caret-position="2397">
+          <caret line="141" column="102" lean-forward="false" selection-start-line="141" selection-start-column="102" selection-end-line="141" selection-end-column="102" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source Files/Backend/GUIBackend.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="true" selection-start-line="0" selection-start-column="16" selection-end-line="2" selection-end-column="3" />
+        <state relative-caret-position="340">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/RSA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/AES.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="117" column="4" lean-forward="false" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#AES#0;class#AES#0" expanded="false" />
+            <element signature="e#2384#2385#0" expanded="false" />
+            <element signature="e#2420#2421#0" expanded="false" />
+            <element signature="e#3621#3622#0" expanded="false" />
+            <element signature="e#3657#3658#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/CaesarCypher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="109" column="25" lean-forward="false" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/Base64Encryption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="32" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <folding>
+            <element signature="e#1115#1116#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
+            <element signature="e#1505#1506#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/FMXL/PopupWindow.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="108" lean-forward="false" selection-start-line="33" selection-start-column="108" selection-end-line="33" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/GUI/FMXL/MainWindow.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="24" column="101" lean-forward="false" selection-start-line="24" selection-start-column="101" selection-end-line="24" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/BlowFish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2005#2006#0" expanded="true" />
+            <element signature="e#2041#2042#0" expanded="true" />
+            <element signature="e#3099#3100#0" expanded="true" />
+            <element signature="e#3135#3136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/Decryption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/Encryption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/EncryptionMethods/TripleDES.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="e#2597#2598#0" expanded="true" />
+            <element signature="e#2633#2634#0" expanded="true" />
+            <element signature="e#3736#3737#0" expanded="true" />
+            <element signature="e#3772#3773#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source Files/GUI/PopupWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1190">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source Files/Backend/BlowFish.java">
+    <entry file="file://$PROJECT_DIR$/Source Files/Backend/BackendTesterMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="300">
+          <caret line="113" column="44" lean-forward="true" selection-start-line="113" selection-start-column="44" selection-end-line="113" selection-end-column="44" />
           <folding />
         </state>
       </provider>

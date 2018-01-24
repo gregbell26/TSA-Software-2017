@@ -1,5 +1,8 @@
 package Backend;
 
+import Backend.EncryptionMethods.CaesarCypher;
+import Backend.EncryptionMethods.TripleDES;
+
 public class GlobalFuncts {
     public static void viewEncrypted(){
         if (TripleDES.getEncryptedText() != null) {
