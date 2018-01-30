@@ -1,5 +1,9 @@
 package Backend.EncryptionMethods;
-
+/**
+* The ceasar cipher
+* TODO Comments
+*@author Micheal K
+*/
 
 import java.util.InputMismatchException;
 
