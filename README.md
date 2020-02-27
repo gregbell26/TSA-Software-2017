@@ -4,13 +4,11 @@
 This is a project that has one goal, To be an all in one encryption utility. This project also for a contest.
 The primary language that this is programmed in is Java 8 with a little bit of CSS3 thrown in for *style* We will be updating this readme file with information as to how well this programmed in the TSA contest. Wish us Luck!
 
-**Lead developer** Michael K. 
+**Lead Developer** Michael K. 
 
-**GUI Design and implementation** Gregory B. (TriHard Studios) 
+**GUI/Backend Design and Implementation** Gregory B. (TriHard Studios) 
 
-**Moral Support and Debugger** Nathan H. 
-
-**Logo designer** Sam S.
+**Logo Designer** Sam S.
 
 Ok Cool, What is it? What does it do?
 -------------------------------------
